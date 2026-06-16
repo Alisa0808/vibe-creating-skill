@@ -101,33 +101,17 @@ Real test cases from the original handbook — the **same scene**, a regular pro
 
 ### Case 2 · near-VC input → light cleanup
 
-<table>
-<tr><th width="50%">Regular prompt</th><th width="50%">✅ Vibe Creating</th></tr>
-<tr>
-<td><img src="assets/cases/case2-regular.gif" width="100%"></td>
-<td><img src="assets/cases/case2-vibe.gif" width="100%"></td>
-</tr>
-</table>
-
-<sub>▶ Full clips with sound: <a href="assets/cases/case2-regular.mp4">regular</a> · <a href="assets/cases/case2-vibe.mp4">Vibe Creating</a></sub>
-
 **Regular prompt** — A person stands in a subway car flooded with seawater; a whale swims past the window outside. Quiet and suffocating.
 
+<video src="https://github.com/Alisa0808/vibe-creating-skill/raw/main/assets/cases/case2-regular.mp4" controls muted playsinline width="480"></video>
+
 **✅ Vibe Creating** — In a subway car flooded by seawater, a person stands quietly, the car's interior half-submerged in dim blue water-light; handrails, seats, and windows are all steeped in a cold, damp silence. The world outside has become the deep sea — a giant whale glides slowly past the window, its vast silhouette passing the long glass without a sound, bringing a near-dreamlike pressure. The whole frame is so quiet you can only feel the presence of the water; the light sways, the air feels utterly drained — calm yet impossible to breathe in.
+
+<video src="https://github.com/Alisa0808/vibe-creating-skill/raw/main/assets/cases/case2-vibe.mp4" controls muted playsinline width="480"></video>
 
 **Comparison —** the input was already close to Vibe Creating, so both clips are similar; the rewrite mainly sharpens the emotional close (awe) and the implied underwater sound design.
 
 ### Case 3 · execution shot-script → direct rewrite
-
-<table>
-<tr><th width="50%">Regular prompt</th><th width="50%">✅ Vibe Creating</th></tr>
-<tr>
-<td><img src="assets/cases/case3-regular.gif" width="100%"></td>
-<td><img src="assets/cases/case3-vibe.gif" width="100%"></td>
-</tr>
-</table>
-
-<sub>▶ Full clips with sound: <a href="assets/cases/case3-regular.mp4">regular</a> · <a href="assets/cases/case3-vibe.mp4">Vibe Creating</a></sub>
 
 <details>
 <summary><b>Regular prompt</b> — a 3-shot execution script (click to expand)</summary>
@@ -138,18 +122,15 @@ Real test cases from the original handbook — the **same scene**, a regular pro
 
 </details>
 
+<video src="https://github.com/Alisa0808/vibe-creating-skill/raw/main/assets/cases/case3-regular.mp4" controls muted playsinline width="480"></video>
+
 **✅ Vibe Creating** — The rain has just stopped; cold mist still floats in the old alley, puddles covering the flagstone road, mirroring the mottled, peeling, moss-grown walls on both sides. A pair of oversized bright-yellow rain boots walks slowly into frame; the little girl steps carefully to the largest puddle and stops, looking down at the swaying reflection. In the air there's only the damp, empty wind after rain, the intermittent dripping from the eaves, and the small sound her boots make on the wet flagstones. She stares at the puddle, then glances down at her boots, brows knit tight, lips pressed — as if waging a solemn, childlike contest with herself. She clearly wants badly to jump, yet hesitates at the very last moment. The next second she makes up her mind and jumps in with both feet; the water bursts open with a roar, great splashes shattering into bright points of light. A dozing ginger cat springs up in fright and scrambles onto a higher wall. As the water settles, she lifts her head and breaks into an unreserved, clear and brilliant laugh, eyes faintly wet — like the moment a rain-washed world is finally lit up by her own hand.
+
+<video src="https://github.com/Alisa0808/vibe-creating-skill/raw/main/assets/cases/case3-vibe.mp4" controls muted playsinline width="480"></video>
 
 **Comparison —** the input is a high-precision shot list, but the underlying scene is a complete emotional arc. After the technical params are stripped, the core beats (hesitation → jump → laugh) survive and the rhythm reads clearer — no parameters needed.
 
 ### Case 4 · heavy precision control → rewrite, with disclosure
-
-<table>
-<tr><td width="50%"><img src="assets/cases/case4-vibe.gif" width="100%"></td>
-<td width="50%"><sub>The skill stripped the technical parameters, rewrote the scene into natural language — and <b>told the user</b> it had done so, offering a parameter-preserving version on request.</sub></td></tr>
-</table>
-
-<sub>▶ Full clip with sound: <a href="assets/cases/case4-vibe.mp4">Vibe Creating</a></sub>
 
 <details>
 <summary><b>Regular prompt</b> — a parameter-packed pre-viz (click to expand)</summary>
@@ -159,6 +140,8 @@ Real test cases from the original handbook — the **same scene**, a regular pro
 </details>
 
 **✅ Vibe Creating** — A hyperrealist cinematic pre-viz shot. In the cold-blue depths of a cave, a lone woman warrior steps slowly from the left foreground into the darkness, a heavy great-blade on her back, her steps cautious and alert. The camera presses forward in a slow, oppressive wide angle with a slight, natural following sway. Through a narrow crack in the cave roof, dramatic volumetric light pours down, piercing the deep gloom — drifting dust clearly visible in the beams. The strong backlight crushes her into a tense half-silhouette, leaving only the cold, hard outline of her gear and blade. The rock walls are wet and rough, faint reflections flickering in the deep shadows; high-contrast, low-saturation, heavy blacks — oppressive, deathly still, danger about to break.
+
+<video src="https://github.com/Alisa0808/vibe-creating-skill/raw/main/assets/cases/case4-vibe.mp4" controls muted playsinline width="480"></video>
 
 **Disclosure (shown to the user) —** "I removed the lens/exposure/grading parameters and translated them into their visual results. If you'd like to keep specific parameters or the pre-viz structure, tell me and I'll give you a constraint-preserving version."
 
