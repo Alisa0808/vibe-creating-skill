@@ -27,5 +27,5 @@ venv/
 *.gif
 !docs/**/*.svg
 !assets/cases/*.mp4
-!assets/cases/*.gif
+!assets/cases/*.jpg
 !assets/social-preview.png

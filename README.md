@@ -101,61 +101,69 @@ Real test cases from the original handbook — the **same scene**, a regular pro
 
 ### Case 2 · near-VC input → light cleanup
 
-**Regular prompt** — A person stands in a subway car flooded with seawater; a whale swims past the window outside. Quiet and suffocating.
-
-**✅ Vibe Creating** — In a subway car flooded by seawater, a person stands quietly, the car's interior half-submerged in dim blue water-light; handrails, seats, and windows are all steeped in a cold, damp silence. The world outside has become the deep sea — a giant whale glides slowly past the window, its vast silhouette passing the long glass without a sound, bringing a near-dreamlike pressure. The whole frame is so quiet you can only feel the presence of the water; the light sways, the air feels utterly drained — calm yet impossible to breathe in.
-
 <table>
-<tr><th width="50%">Regular prompt → clip</th><th width="50%">✅ Vibe Creating → clip</th></tr>
+<tr><th>Dimension</th><th width="42%">User input · regular prompt</th><th width="42%">✅ Skill output · Vibe Creating</th></tr>
 <tr>
-<td><a href="assets/cases/case2-regular.mp4"><img src="assets/cases/case2-regular.gif" width="100%"></a></td>
-<td><a href="assets/cases/case2-vibe.mp4"><img src="assets/cases/case2-vibe.gif" width="100%"></a></td>
+<td valign="top"><b>Prompt</b></td>
+<td valign="top">A person stands in a subway car flooded with seawater; a whale swims past the window outside. Quiet and suffocating.</td>
+<td valign="top">In a subway car flooded by seawater, a person stands quietly, the car's interior half-submerged in dim blue water-light; handrails, seats, and windows are all steeped in a cold, damp silence. The world outside has become the deep sea — a giant whale glides slowly past the window, its vast silhouette passing the long glass without a sound, bringing a near-dreamlike pressure. The whole frame is so quiet you can only feel the presence of the water; the light sways, the air feels utterly drained — calm yet impossible to breathe in.</td>
+</tr>
+<tr>
+<td valign="top"><b>Generated clip</b></td>
+<td><a href="assets/cases/case2-regular.mp4"><img src="assets/cases/case2-regular-poster.jpg" width="100%"></a></td>
+<td><a href="assets/cases/case2-vibe.mp4"><img src="assets/cases/case2-vibe-poster.jpg" width="100%"></a></td>
+</tr>
+<tr>
+<td valign="top"><b>Comparison</b></td>
+<td colspan="2">The input was already close to Vibe Creating, so both clips are similar; the rewrite mainly sharpens the emotional close (awe) and the implied underwater sound design.</td>
 </tr>
 </table>
 
-<sub>▶ Click a clip to open the full video (with sound).</sub>
-
-**Comparison —** the input was already close to Vibe Creating, so both clips are similar; the rewrite mainly sharpens the emotional close (awe) and the implied underwater sound design.
+<sub>▶ Click a clip to open the full video, with sound.</sub>
 
 ### Case 3 · execution shot-script → direct rewrite
 
-<details>
-<summary><b>Regular prompt</b> — a 3-shot execution script (click to expand)</summary>
-
-> **Shot 1 — a damp memory, setup (00:00–00:03) | 3s.** Framing: wide shot → full shot. Camera: static frame. Image: the heavy rain has just stopped; cold-toned mist fills the air. The flagstone road is covered in puddles, mirroring the mottled, peeling, moss-grown old walls on both sides. At the edge of frame, a pair of bright-yellow rubber rain boots, far too big for the feet inside them, slowly steps into view. The little girl, wearing the yellow boots, walks carefully to the edge of the largest puddle and stops, looking down at the huge reflection in the water. SFX: the damp, empty wind after rain; the monotonous drip off the roof tiles; the faint "squeak" of rain boots on wet flagstones.
-> **Shot 2 — the standoff before the key action (00:03–00:08) | 5s (the emphasis).** Framing: extreme close-up → close-up. Camera: an extremely slow push-in. Image: the camera fixes on the girl's cheek. Her brows are tightly knit, her gaze darting between the huge puddle and the oversized yellow boots. She bites her lower lip; her nose wrinkles slightly. She takes a deep breath, her whole face showing an intensely vivid inner standoff of "I want to jump… but I don't dare." At the end of second 8, a heavy, suppressed heartbeat boom cuts in. VFX notes: extremely fine facial texture (SSS skin material); micro-capillary response under the skin; the catch of the puddle's reflected light in her eyes; raindrops dripping down her hair.
-> **Shot 3 — the burst and its afterglow, reaction (00:08–00:15) | 7s.** Framing: low-angle wide shot → static medium shot. Camera: at the instant the action bursts, the camera snaps back to a fixed focus. Image: the girl drops all hesitation and jumps in with both feet; high-speed, the water bursts into countless diamond-like droplets. A dozing ginger cat is startled awake, fur on end, scrambling onto a higher wall. The frame returns to a medium shot: she lifts her head into an intensely brilliant, pure, crisp laugh, eyes wet. SFX: a violent, bass-heavy splash; the cat's scramble; clear child laughter. VFX notes: volumetric fluid simulation; slow-motion droplet physics; color saturation lifts slightly as her laughter bursts.
-
-</details>
-
-**✅ Vibe Creating** — The rain has just stopped; cold mist still floats in the old alley, puddles covering the flagstone road, mirroring the mottled, peeling, moss-grown walls on both sides. A pair of oversized bright-yellow rain boots walks slowly into frame; the little girl steps carefully to the largest puddle and stops, looking down at the swaying reflection. In the air there's only the damp, empty wind after rain, the intermittent dripping from the eaves, and the small sound her boots make on the wet flagstones. She stares at the puddle, then glances down at her boots, brows knit tight, lips pressed — as if waging a solemn, childlike contest with herself. She clearly wants badly to jump, yet hesitates at the very last moment. The next second she makes up her mind and jumps in with both feet; the water bursts open with a roar, great splashes shattering into bright points of light. A dozing ginger cat springs up in fright and scrambles onto a higher wall. As the water settles, she lifts her head and breaks into an unreserved, clear and brilliant laugh, eyes faintly wet — like the moment a rain-washed world is finally lit up by her own hand.
-
 <table>
-<tr><th width="50%">Regular prompt → clip</th><th width="50%">✅ Vibe Creating → clip</th></tr>
+<tr><th>Dimension</th><th width="42%">User input · regular prompt</th><th width="42%">✅ Skill output · Vibe Creating</th></tr>
 <tr>
-<td><a href="assets/cases/case3-regular.mp4"><img src="assets/cases/case3-regular.gif" width="100%"></a></td>
-<td><a href="assets/cases/case3-vibe.mp4"><img src="assets/cases/case3-vibe.gif" width="100%"></a></td>
+<td valign="top"><b>Prompt</b></td>
+<td valign="top"><details><summary>3-shot execution script (click to expand)</summary><br><b>Shot 1 — setup (00:00–00:03).</b> Wide → full shot, static frame. The heavy rain has just stopped; cold-toned mist fills the air. The flagstone road is covered in puddles mirroring mottled, moss-grown walls. A pair of oversized bright-yellow rain boots steps into view; the girl walks to the largest puddle and stops, looking down at the reflection. SFX: damp empty wind, drips off the tiles, the "squeak" of boots on wet stone.<br><br><b>Shot 2 — the standoff (00:03–00:08).</b> Extreme close-up → close-up, extremely slow push-in on her face. Brows knit, gaze darting between puddle and boots, biting her lip, nose wrinkling — an intensely vivid "I want to jump… but I don't dare." At second 8 a heavy heartbeat boom cuts in. VFX: SSS skin, micro-capillary response, reflected light in her eyes, raindrops down her hair.<br><br><b>Shot 3 — the burst (00:08–00:15).</b> Low-angle wide → static medium. She drops all hesitation and jumps with both feet; high-speed, the water bursts into diamond-like droplets. A dozing ginger cat scrambles up a wall. She lifts her head into a brilliant, crisp laugh, eyes wet. SFX: bass-heavy splash, the cat's scramble, clear child laughter. VFX: volumetric fluid sim, slow-motion droplets, saturation lifts as she laughs.</details></td>
+<td valign="top">The rain has just stopped; cold mist still floats in the old alley, puddles covering the flagstone road, mirroring the mottled, peeling, moss-grown walls on both sides. A pair of oversized bright-yellow rain boots walks slowly into frame; the little girl steps carefully to the largest puddle and stops, looking down at the swaying reflection. In the air there's only the damp, empty wind after rain, the intermittent dripping from the eaves, and the small sound her boots make on the wet flagstones. She stares at the puddle, then glances down at her boots, brows knit tight, lips pressed — as if waging a solemn, childlike contest with herself. She clearly wants badly to jump, yet hesitates at the very last moment. The next second she makes up her mind and jumps in with both feet; the water bursts open with a roar, great splashes shattering into bright points of light. A dozing ginger cat springs up in fright and scrambles onto a higher wall. As the water settles, she lifts her head and breaks into an unreserved, clear and brilliant laugh, eyes faintly wet — like the moment a rain-washed world is finally lit up by her own hand.</td>
+</tr>
+<tr>
+<td valign="top"><b>Generated clip</b></td>
+<td><a href="assets/cases/case3-regular.mp4"><img src="assets/cases/case3-regular-poster.jpg" width="100%"></a></td>
+<td><a href="assets/cases/case3-vibe.mp4"><img src="assets/cases/case3-vibe-poster.jpg" width="100%"></a></td>
+</tr>
+<tr>
+<td valign="top"><b>Comparison</b></td>
+<td colspan="2">The input is a high-precision shot list, but the underlying scene is a complete emotional arc. After the technical params are stripped, the core beats (hesitation → jump → laugh) survive and the rhythm reads clearer — no parameters needed.</td>
 </tr>
 </table>
 
-<sub>▶ Click a clip to open the full video (with sound).</sub>
-
-**Comparison —** the input is a high-precision shot list, but the underlying scene is a complete emotional arc. After the technical params are stripped, the core beats (hesitation → jump → laugh) survive and the rhythm reads clearer — no parameters needed.
+<sub>▶ Click a clip to open the full video, with sound.</sub>
 
 ### Case 4 · heavy precision control → rewrite, with disclosure
 
-<details>
-<summary><b>Regular prompt</b> — a parameter-packed pre-viz (click to expand)</summary>
+<table>
+<tr><th>Dimension</th><th width="42%">User input · regular prompt</th><th width="42%">✅ Skill output · Vibe Creating</th></tr>
+<tr>
+<td valign="top"><b>Prompt</b></td>
+<td valign="top"><details><summary>parameter-packed pre-viz (click to expand)</summary><br>Cinematic pre-viz shot, hyperrealist feel. Shot with a 21mm wide-angle prime cine lens and a large-format sensor, a continuous slow tension-building dolly-in with a slight Steadicam sway. Rule-of-thirds; a lone woman warrior enters from the left foreground toward a dark deep cave. High-contrast volumetric light (Tyndall) pours through a crack in the roof; f/11 for deep depth of field, 1/250s shutter to freeze suspended dust. Extreme backlight (EV+4) presses her gear and great-blade into a tense half-silhouette. Damp, oppressive; HDR + ISO 12800 for natural low-light noise and film grain; desaturated dark grading, cold-blue tones, crushed blacks.</details></td>
+<td valign="top">A hyperrealist cinematic pre-viz shot. In the cold-blue depths of a cave, a lone woman warrior steps slowly from the left foreground into the darkness, a heavy great-blade on her back, her steps cautious and alert. The camera presses forward in a slow, oppressive wide angle with a slight, natural following sway. Through a narrow crack in the cave roof, dramatic volumetric light pours down, piercing the deep gloom — drifting dust clearly visible in the beams. The strong backlight crushes her into a tense half-silhouette, leaving only the cold, hard outline of her gear and blade. The rock walls are wet and rough, faint reflections flickering in the deep shadows; high-contrast, low-saturation, heavy blacks — oppressive, deathly still, danger about to break.</td>
+</tr>
+<tr>
+<td valign="top"><b>Generated clip</b></td>
+<td valign="middle" align="center"><sub>— parameters removed; no separate clip —</sub></td>
+<td><a href="assets/cases/case4-vibe.mp4"><img src="assets/cases/case4-vibe-poster.jpg" width="100%"></a></td>
+</tr>
+<tr>
+<td valign="top"><b>Disclosure</b></td>
+<td colspan="2">Shown to the user: "I removed the lens/exposure/grading parameters and translated them into their visual results. If you'd like to keep specific parameters or the pre-viz structure, tell me and I'll give you a constraint-preserving version."</td>
+</tr>
+</table>
 
-> Cinematic pre-viz shot, hyperrealist cinematic feel. Shot with a 21mm wide-angle prime cine lens and a large-format digital sensor, presenting a continuous, slow, tension-building dolly-in with a slight, natural Steadicam handheld sway. The frame follows the rule of thirds; a lone woman warrior enters alone from the left foreground, stepping cautiously toward the depths of a dark, deep cave. Dramatically high-contrast volumetric light (the Tyndall effect) pours down through a narrow crack in the cave roof; the camera is set to f/11 for deep depth of field, paired with a fast 1/250s shutter to freeze the thick suspended dust. The strong light creates extreme backlight (EV+4), pressing the warrior's layered gear and the heavy great-blade on her back into a tense half-silhouette. The surroundings are damp and oppressive; HDR capture with ISO 12800 brings natural low-light noise and film grain. The whole uses a desaturated dark color grading, leaning into cold-blue tones and crushed blacks.
-
-</details>
-
-**✅ Vibe Creating** — A hyperrealist cinematic pre-viz shot. In the cold-blue depths of a cave, a lone woman warrior steps slowly from the left foreground into the darkness, a heavy great-blade on her back, her steps cautious and alert. The camera presses forward in a slow, oppressive wide angle with a slight, natural following sway. Through a narrow crack in the cave roof, dramatic volumetric light pours down, piercing the deep gloom — drifting dust clearly visible in the beams. The strong backlight crushes her into a tense half-silhouette, leaving only the cold, hard outline of her gear and blade. The rock walls are wet and rough, faint reflections flickering in the deep shadows; high-contrast, low-saturation, heavy blacks — oppressive, deathly still, danger about to break.
-
-<a href="assets/cases/case4-vibe.mp4"><img src="assets/cases/case4-vibe.gif" width="480"></a>
-
-<sub>▶ Click the clip to open the full video (with sound).</sub>
+<sub>▶ Click the clip to open the full video, with sound.</sub>
 
 **Disclosure (shown to the user) —** "I removed the lens/exposure/grading parameters and translated them into their visual results. If you'd like to keep specific parameters or the pre-viz structure, tell me and I'll give you a constraint-preserving version."
 
