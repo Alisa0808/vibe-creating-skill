@@ -1,8 +1,17 @@
-# Vibe Creating Prompt Skill
+# Vibe Creating — AI Video Prompt Skill for Seedance, Sora, Kling & Veo
 
-> Let creation return to expression. An open-source, English port of the **Vibe Creating** video-prompt skill — packaged as a Claude Agent Skill.
+> Turn a rough idea into a model-ready text-to-video prompt. Let creation return to expression.
 
-[English](README.md) · [中文](README.zh.md) · MIT License
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![Claude Agent Skill](https://img.shields.io/badge/Claude-Agent%20Skill-8A2BE2.svg)](skills/vibe-creating-prompt/SKILL.md)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
+![Bilingual EN + 中文](https://img.shields.io/badge/docs-EN%20%2B%20%E4%B8%AD%E6%96%87-orange.svg)
+
+[English](README.md) · [中文](README.zh.md)
+
+**Vibe Creating** is an open-source, bilingual **prompt-engineering skill** that rewrites a rough idea, story, feeling, or over-specified shot script into a clean, **model-friendly text-to-video prompt** — and first judges whether your input even suits this style. It works with AI video models like **Seedance 2.0, Sora, Kling, Veo, Runway, Pika, and Hailuo**, and ships as a **Claude Agent Skill** plus a paste-anywhere system prompt for any LLM.
+
+Keywords: *AI video prompt · text-to-video prompt generator · prompt optimization · prompt rewriting · Seedance / Sora / Kling / Veo prompt guide · Claude Code skill · agent skill · generative AI video.*
 
 ---
 
@@ -10,7 +19,7 @@
 
 As text-to-video models get smarter, prompting gets *simpler*. Instead of over-specifying focal lengths, shot numbers, and frame-by-frame scripts, you focus on **telling the story** and **trust the model** to find the right shots, light, and rhythm.
 
-**Vibe Creating** is that paradigm — introduced by ByteDance / Volcano Engine alongside the **Seedance 2.0** model. This repo turns its methodology into a reusable **prompt skill**:
+**Vibe Creating** is that paradigm — introduced by ByteDance / Volcano Engine alongside the **Seedance 2.0** video-generation model. This repo turns its methodology into a reusable **AI video prompt skill**:
 
 - 🎯 **Focus on Story** — describe the situation, the texture of the air, the flow of emotion; let the model interpret.
 - 🤝 **Trust the Model** — drop low-value technical parameters; keep and *translate* the shot *intent*.
@@ -66,6 +75,26 @@ docs/
 ## When NOT to use it
 
 Vibe Creating is for atmosphere, emotion, narrative, and visual exploration. For **precise word-for-word dialogue sync, strict shot-by-shot execution, UI demos, or step-by-step tutorials**, traditional precise prompting is the better tool — and the skill will tell you so rather than force a rewrite.
+
+## FAQ
+
+### What is Vibe Creating?
+Vibe Creating is a prompt-writing paradigm for AI video generation: instead of over-specifying camera parameters and shot-by-shot scripts, you describe the story and feeling and trust the model to interpret it. This repo packages that approach as a reusable prompt skill that rewrites your input into a model-friendly text-to-video prompt.
+
+### How do I write a good AI video prompt?
+Cover four layers without naming them: a **visual anchor** (the main subject), an **action or state** (what's happening), a **local tonality** (one mood word), and a **video theme** (use case + visual style). Keep the story; drop low-value technical parameters. The skill does this for you and asks for whatever layer is missing.
+
+### Which video models does this work with?
+Any text-to-video model — it was distilled from **Seedance 2.0**, and the same prompts work well with **Sora, Kling, Veo, Runway, Pika, and Hailuo**. The output is plain natural-language description, not model-specific syntax.
+
+### Can I use it without Claude?
+Yes. It ships as a **Claude Agent Skill**, but the skill is a single self-contained Markdown file — paste [`SKILL.md`](skills/vibe-creating-prompt/SKILL.md) as the system prompt in any LLM (GPT, Gemini, local models).
+
+### How is this different from just writing a longer, detailed prompt?
+Vibe Creating is not "longer" or "shorter" — it's *the right information*. It removes ineffective technical noise and keeps the story, emotion, and key imagery, so the model locks onto your intent. It also refuses to rewrite inputs that genuinely need precise control (dialogue sync, UI demos), instead of forcing every prompt into one style.
+
+### Is this an official ByteDance / Seedance project?
+No. It's an independent, faithful open-source port of a publicly-shared methodology. See [Attribution & license](#attribution--license) and [NOTICE](NOTICE).
 
 ## Contributing
 

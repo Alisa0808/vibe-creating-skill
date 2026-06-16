@@ -1,0 +1,23 @@
+# Vibe Creating — AI Video Prompt Skill
+
+> Vibe Creating is an open-source, bilingual (English + Chinese) prompt-engineering skill that rewrites a rough idea, story, feeling, or over-specified shot script into a clean, model-friendly text-to-video prompt — and first judges whether the input suits this style before rewriting. It is distilled from ByteDance / Volcano Engine's "Vibe Creating" paradigm (introduced with the Seedance 2.0 model) and works with text-to-video models including Seedance, Sora, Kling, Veo, Runway, Pika, and Hailuo. It ships as a Claude Agent Skill and as a paste-anywhere system prompt for any LLM.
+
+Core idea: as video models get smarter, prompting gets simpler. Focus on telling the story and trust the model, instead of over-specifying focal lengths, shot numbers, and frame-by-frame scripts. A strong prompt covers four layers — visual anchor, action/state, local tonality, and video theme — and drops low-value technical parameters. The skill is judgment-first: it will not force a rewrite onto inputs that genuinely need precise control (word-for-word dialogue sync, UI demos, step-by-step tutorials).
+
+## Skill
+
+- [SKILL.md (English)](skills/vibe-creating-prompt/SKILL.md): the Claude Agent Skill — decision framework (Scenario × Expression × Information), camera/sound/constraint policies, rewrite modes, output format, quick reference.
+- [SKILL.zh.md (中文)](skills/vibe-creating-prompt/SKILL.zh.md): the Chinese edition of the skill.
+
+## Docs
+
+- [Philosophy / manifesto](docs/philosophy.md): why smarter models make prompting simpler; the two pillars (Focus on Story, Trust the Model); the four-layer prompt model; when Vibe Creating fits and when it does not.
+- [Example gallery](docs/examples/README.md): Vibe Creating prompt examples across literary visualization, cinematic narrative, surreal/dreamcore, knowledge & physics, brand advertising, game & IP, and light entertainment.
+- [Worked test cases](docs/test-cases.md): eight input → judgment → action → output cases covering the decision framework.
+
+## Project
+
+- [README (English)](README.md)
+- [README (中文)](README.zh.md)
+- [Contributing](CONTRIBUTING.md)
+- [License: MIT](LICENSE) and [attribution](NOTICE)

@@ -1,8 +1,17 @@
-# Vibe Creating 提示词 Skill
+# Vibe Creating —— Seedance / Sora / Kling / Veo 通用的 AI 视频提示词 Skill
 
-> 让创作回归「表达」本身。**Vibe Creating** 文生视频提示词 Skill 的开源英文/双语版——封装为 Claude Agent Skill。
+> 把一个粗糙想法变成模型可直接生成的文生视频提示词。让创作回归「表达」本身。
 
-[English](README.md) · [中文](README.zh.md) · MIT 协议
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![Claude Agent Skill](https://img.shields.io/badge/Claude-Agent%20Skill-8A2BE2.svg)](skills/vibe-creating-prompt/SKILL.md)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
+![Bilingual EN + 中文](https://img.shields.io/badge/docs-EN%20%2B%20%E4%B8%AD%E6%96%87-orange.svg)
+
+[English](README.md) · [中文](README.zh.md)
+
+**Vibe Creating** 是一个开源、双语的**提示词工程 Skill**：把一个粗糙想法、故事、感觉或过度细化的分镜脚本,改写成干净、**模型友好的文生视频提示词**——并且会先判断你的输入是否适合这种风格。它适用于 **Seedance 2.0、Sora、Kling、Veo、Runway、Pika、Hailuo（海螺）** 等 AI 视频模型,并封装为 **Claude Agent Skill** + 可粘贴到任意 LLM 的系统提示词。
+
+关键词:*AI 视频提示词 · 文生视频 · text-to-video · 提示词优化 / 改写 · Seedance / Sora / Kling / Veo 提示词 · Claude Skill · agent skill · 生成式 AI 视频。*
 
 ---
 
@@ -66,6 +75,26 @@ docs/
 ## 什么时候不该用
 
 Vibe Creating 适合氛围、情绪、叙事和视觉探索。对于**精确逐字对白同步、严格分镜执行、UI 演示或步骤教程**，传统精确提示词是更好的工具——Skill 会直接告诉你，而不是强行改写。
+
+## 常见问题 FAQ
+
+### 什么是 Vibe Creating？
+Vibe Creating 是一种面向 AI 视频生成的提示词写法:与其逐帧堆砌镜头参数和分镜脚本,不如描述故事和感受,信任模型去诠释。本仓库把它封装成一个可复用的提示词 Skill,帮你把输入改写成模型友好的文生视频提示词。
+
+### 怎么写出一条好的 AI 视频提示词？
+覆盖四层(不必点名):**视觉锚点**(主体)、**行为或状态**(在发生什么)、**局部调性**(一个氛围词)、**视频主题**(应用场景 + 画面风格)。保留故事,删掉低价值技术参数。Skill 会替你做这件事,并补问缺失的那一层。
+
+### 支持哪些视频模型？
+任意文生视频模型——它源自 **Seedance 2.0**,同样的提示词在 **Sora、Kling、Veo、Runway、Pika、海螺(Hailuo)** 上也好用。输出是自然语言画面描述,不是某个模型的专用语法。
+
+### 不用 Claude 能用吗？
+能。它封装为 **Claude Agent Skill**,但本质是一个自包含的 Markdown 文件——把 [`SKILL.md`](skills/vibe-creating-prompt/SKILL.md) 粘贴为任意 LLM(GPT、Gemini、本地模型)的系统提示词即可。
+
+### 和直接写一条更长更详细的提示词有什么区别？
+Vibe Creating 不是「更长」或「更短」,而是「给对信息」。它去掉无效的技术噪声,保留故事、情绪和关键意象,让模型锁定你的意图。它还会拒绝改写那些真正需要精确控制的输入(对白同步、UI 演示),而不是把所有提示词强行套进一种风格。
+
+### 这是字节跳动 / Seedance 官方项目吗？
+不是。这是对一份公开方法论的独立、忠实的开源整理。见[署名与协议](#署名与协议)和 [NOTICE](NOTICE)。
 
 ## 参与贡献
 
