@@ -16,7 +16,7 @@
 
 </div>
 
-**Vibe Creating** is an open-source, bilingual **prompt-engineering skill** that rewrites a rough idea, story, feeling, or over-specified shot script into a clean, **model-friendly text-to-video prompt** — and first judges whether your input even suits this style. It follows the open [Agent Skills standard](https://www.agentskills.io) (a single `SKILL.md`), so it runs in **Claude Code, Codex, OpenClaw, Hermes, Cursor**, and any compatible agent — or as a system prompt in any LLM. It works with AI video models like **Seedance 2.0, Sora, Kling, Veo, Runway, Pika, and Hailuo**.
+**Vibe Creating** is an open-source, bilingual **prompt-engineering skill** that rewrites a rough idea, story, feeling, or over-specified shot script into a clean, **model-friendly text-to-video prompt** — and first judges whether your input even suits this style. It follows the open [Agent Skills standard](https://agentskills.io) (a single `SKILL.md`), so it runs in **Claude Code, Codex, OpenClaw, Hermes, Cursor**, and any compatible agent — or as a system prompt in any LLM. It works with AI video models like **Seedance 2.0, Sora, Kling, Veo, Runway, Pika, and Hailuo**.
 
 ---
 
@@ -54,6 +54,17 @@ Input  (idea · scene · script)
 
 The four layers it checks for: **visual anchor** (the main subject), **action / state** (what's happening), **local tonality** (one mood word), and **video theme** (use case + visual style).
 
+And every response comes back in that same fixed four-part format:
+
+> **Judgment** — does it suit Vibe Creating, is it already usable, is the info enough
+> **Action** — one of *pass-through / light cleanup / direct rewrite / ask first / keep as-is / optional VC version*
+> **Result** — the rewritten prompt, the kept text, or a clarifying question
+> **Notes** *(if any)* — what technical control was stripped, what constraints were kept
+
+**For example —**
+**You:** *Express the feeling of freedom.*
+**Skill:** *Judgment:* suits VC, but too abstract to render — no visual anchor. *Action:* **ask first** — "Who is free, and where? A child in open fields, a diver, a city rooftop at dawn? Any style — photoreal, anime, ink-wash?"
+
 ## 📦 Install
 
 The skill is one portable `SKILL.md` folder. Pick whichever option fits your setup.
@@ -83,19 +94,6 @@ cp -r vibe-creating-skill/skills/vibe-creating-prompt <your-agent-skills-dir>/
 **Option 3 — Any other LLM.** Paste the body of [the skill file](skills/vibe-creating-prompt/SKILL.md) (or [its Chinese edition](skills/vibe-creating-prompt/SKILL.zh.md)) as the system prompt / custom instructions in GPT, Gemini, a local model, etc.
 
 Then restart your agent and describe what you want to film — e.g. *"a basketball kid hits a buzzer-beater three."*
-
-## 💬 What you get back
-
-Every response uses a fixed four-part format:
-
-> **Judgment** — does it suit Vibe Creating, is it already usable, is the info enough
-> **Action** — one of *pass-through / light cleanup / direct rewrite / ask first / keep as-is / optional VC version*
-> **Result** — the rewritten prompt, the kept text, or a clarifying question
-> **Notes** *(if any)* — what technical control was stripped, what constraints were kept
-
-**Example —**
-**You:** *Express the feeling of freedom.*
-**Skill:** *Judgment:* suits VC, but too abstract to render — no visual anchor. *Action:* **ask first** — "Who is free, and where? A child in open fields, a diver, a city rooftop at dawn? Any style — photoreal, anime, ink-wash?"
 
 ## 🎨 Examples
 
