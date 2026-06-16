@@ -10,16 +10,16 @@ The Vibe Creating paradigm, the original "Vibe Creating 提示词 Skill.md" draf
 the four-layer prompt model, the decision framework, and the example prompts in
 docs/examples/ all originate from:
 
-    ByteDance / Volcano Engine (火山引擎)
+    ByteDance / Volcengine (火山引擎)
 
 and were published in their "Vibe Creating Practice Handbook," produced with the
 Seedance 2.0 video-generation model.
 
-This repository is NOT an official ByteDance / Volcano Engine product, is not
+This repository is NOT an official ByteDance / Volcengine product, is not
 affiliated with or endorsed by them, and does not represent them. It exists to
 make a publicly-shared methodology easier to adopt in English and across tools.
 
-All trademarks — including "Seedance," "Volcano Engine," and "火山引擎" — are the
+All trademarks — including "Seedance," "Volcengine," and "火山引擎" — are the
 property of their respective owners.
 
 CONTENT NOTES

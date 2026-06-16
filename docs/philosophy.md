@@ -1,6 +1,6 @@
 # Vibe Creating — the philosophy
 
-> English port of ByteDance / Volcano Engine's *Vibe Creating Practice Handbook*. See [NOTICE](../NOTICE) for attribution.
+> English port of ByteDance / Volcengine's *Vibe Creating Practice Handbook*. See [NOTICE](../NOTICE) for attribution.
 
 ## The smarter the model, the simpler creation
 

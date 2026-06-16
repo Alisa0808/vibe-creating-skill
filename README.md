@@ -19,7 +19,7 @@ Keywords: *AI video prompt · text-to-video prompt generator · prompt optimizat
 
 As text-to-video models get smarter, prompting gets *simpler*. Instead of over-specifying focal lengths, shot numbers, and frame-by-frame scripts, you focus on **telling the story** and **trust the model** to find the right shots, light, and rhythm.
 
-**Vibe Creating** is that paradigm — introduced by ByteDance / Volcano Engine alongside the **Seedance 2.0** video-generation model. This repo turns its methodology into a reusable **AI video prompt skill**:
+**Vibe Creating** is that paradigm — introduced by ByteDance / Volcengine alongside the **Seedance 2.0** video-generation model. This repo turns its methodology into a reusable **AI video prompt skill**:
 
 - 🎯 **Focus on Story** — describe the situation, the texture of the air, the flow of emotion; let the model interpret.
 - 🤝 **Trust the Model** — drop low-value technical parameters; keep and *translate* the shot *intent*.
@@ -102,6 +102,6 @@ Translations, new gallery prompts, and refinements welcome — see [CONTRIBUTING
 
 ## Attribution & license
 
-The **Vibe Creating** paradigm, the original skill draft, and the example prompts originate from **ByteDance / Volcano Engine** (created with **Seedance 2.0**). This repository is an independent, faithful English/bilingual port of that publicly-shared methodology, not an official product. See [NOTICE](NOTICE) for full attribution.
+The **Vibe Creating** paradigm, the original skill draft, and the example prompts originate from **ByteDance / Volcengine** (created with **Seedance 2.0**). This repository is an independent, faithful English/bilingual port of that publicly-shared methodology, not an official product. See [NOTICE](NOTICE) for full attribution.
 
 Code and documentation in this repo are released under the [MIT License](LICENSE). The underlying paradigm and any trademarks remain with their original owners.
