@@ -11,9 +11,8 @@ Thanks for helping improve the Vibe Creating Prompt Skill. Contributions of any 
 
 ## Repository conventions
 
-- **Bilingual pairs stay in sync.** When you change `SKILL.md`, mirror it in `SKILL.zh.md` (and the same for `README` / `philosophy` / system prompts). Keep the same section structure so the two read in parallel.
-- **The skill is the source of truth.** `prompts/system-prompt.*.md` is a condensed restatement of `skills/vibe-creating-prompt/SKILL.md` — if you change the framework or policies in the skill, update the portable prompt to match.
-- **Keep `SKILL.md` lean.** Aim for ≤ 500 lines of body. Push long material into `docs/`. (See the appendix in the skill for Anthropic's SKILL.md guidance.)
+- **Bilingual pairs stay in sync.** When you change `SKILL.md`, mirror it in `SKILL.zh.md` (and the same for `README` / `philosophy`). Keep the same section structure so the two read in parallel.
+- **Keep `SKILL.md` lean.** Aim for ≤ 500 lines of body. Push long material into `docs/`. Follow Anthropic's SKILL.md guidance: a concise `description` answering *what* + *when* with reverse boundaries, and workflows written as checklists.
 - **English for filenames and code**, kebab-case. Prose can be in either language in the appropriate file.
 
 ## Adding a gallery prompt

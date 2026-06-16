@@ -175,13 +175,3 @@ The goal is to help the user **express more accurately** — not to rewrite thei
 | Functional demo, UI tutorial, step instructions | Low fit; the goal isn't creative translation | Usually no VC questions | Keep as-is; suggest splitting if useful | Explain VC isn't recommended |
 | Long-form story requiring exact dialogue sync | Low fit; capability/workflow boundary | Usually no VC questions | No VC rewrite; suggest splitting visual segments | Explain pure-visual parts can be split out |
 | Mixed-language creative input with some jargon | If the underlying experience is clear, still suits VC | Only if subject, relationship, or style is unclear | Translate jargon, keep core vibe | Output a natural visual description in the target language |
-
----
-
-## Appendix — How to write a good SKILL.md (from Anthropic)
-
-- **Concise is key.** Assume the model is already smart — only write what it doesn't know. Aim for ≤ 500 lines of body.
-- `description` must answer exactly two things: **What** the skill does, and **When** it triggers. Write it in the third person ("Use this skill whenever…"), never "I can help you…".
-- List **trigger keywords** and give **reverse boundaries** (Do NOT use for…) to prevent mis-triggering.
-- Close with a **Quick Reference** table so the model has a dense lookup.
-- Express workflows as checklists the model can copy and tick — Anthropic's testing shows this measurably reduces skipped steps.

@@ -1,6 +1,6 @@
 # Vibe Creating Prompt Skill
 
-> Let creation return to expression. An open-source, English port of the **Vibe Creating** video-prompt skill — packaged as a Claude Agent Skill and a portable system prompt for any LLM.
+> Let creation return to expression. An open-source, English port of the **Vibe Creating** video-prompt skill — packaged as a Claude Agent Skill.
 
 [English](README.md) · [中文](README.zh.md) · MIT License
 
@@ -33,9 +33,9 @@ cp -r skills/vibe-creating-prompt ~/.claude/skills/
 
 Restart Claude, then just describe what you want to film — e.g. *"a basketball kid hits a buzzer-beater three"* — and the skill triggers automatically. The Chinese edition is [`SKILL.zh.md`](skills/vibe-creating-prompt/SKILL.zh.md).
 
-### As a portable system prompt (GPT, Gemini, local models, …)
+### Using it with other LLMs
 
-Paste [`prompts/system-prompt.en.md`](prompts/system-prompt.en.md) (or [`.zh.md`](prompts/system-prompt.zh.md)) as the system prompt / custom instructions, then send your idea. Setup details: [`prompts/README.md`](prompts/README.md).
+The skill is a single self-contained Markdown file. To use the same logic outside Claude, paste the body of [`SKILL.md`](skills/vibe-creating-prompt/SKILL.md) (or [`SKILL.zh.md`](skills/vibe-creating-prompt/SKILL.zh.md)) as the system prompt / custom instructions in any LLM (GPT, Gemini, local models), then send your idea.
 
 ## What you get back
 
@@ -57,7 +57,6 @@ See more in [docs/test-cases.md](docs/test-cases.md) and the [example gallery](d
 
 ```
 skills/vibe-creating-prompt/   # the Claude Agent Skill (SKILL.md + SKILL.zh.md)
-prompts/                       # portable, model-agnostic system prompt (EN + ZH)
 docs/
   philosophy.md                # the manifesto (EN + ZH)
   examples/                    # the "inspiration magazine" prompt gallery

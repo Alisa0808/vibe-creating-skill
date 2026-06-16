@@ -69,17 +69,3 @@ Literary expression already carries strong imagery, emotion, and narrative tensi
 > 恍惚间，他好像又回到了那个锦衣玉食的响午。还是那个穿着绸缎马褂的少年，骑在老仆宽背上进学，路过街市非要吃红艳艳的糖葫芦。训斥声从后头传来，他却调皮地不理。镜头一晃，他正弓腰蹲在干裂田垄间，手里攥着一把带汗味的湿泥，火辣辣的日头把后颈晒得生疼。那些往事，仿佛是另一个人的遥远梦境。
 
 </details>
-
-## Classical imagery
-
-Vivid proof that even sparse classical-style language carries strong feeling — and that the model reads the historical and emotional subtext, not just the surface scene.
-
-### Snow, in the spirit of a Ming-dynasty lake pavilion
-
-> A heavy snow has fallen for three days; on the lake, the sounds of people and birds are gone. Rime hangs thick — sky and cloud and hill and water are one expanse of white. The only shadows on the lake: a single streak of the long causeway, one dot of the mid-lake pavilion, one mustard-seed of my boat, and two or three grains of people aboard it.
-
-<details><summary>原文（仿写，取意于古典写雪的清寂）</summary>
-
-> 大雪三日，湖中人鸟声俱绝。雾凇沆砀，天与云与山与水，上下一白。湖上影子，惟长堤一痕、湖心亭一点、与余舟一芥、舟中人两三粒而已。
-
-</details>

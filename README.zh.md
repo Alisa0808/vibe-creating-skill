@@ -1,6 +1,6 @@
 # Vibe Creating 提示词 Skill
 
-> 让创作回归「表达」本身。**Vibe Creating** 文生视频提示词 Skill 的开源英文/双语版——封装为 Claude Agent Skill，以及可用于任意 LLM 的可移植系统提示词。
+> 让创作回归「表达」本身。**Vibe Creating** 文生视频提示词 Skill 的开源英文/双语版——封装为 Claude Agent Skill。
 
 [English](README.md) · [中文](README.zh.md) · MIT 协议
 
@@ -33,9 +33,9 @@ cp -r skills/vibe-creating-prompt ~/.claude/skills/
 
 重启 Claude，然后直接描述你想拍什么——例如*「篮球少年最后一秒压哨三分绝杀」*——Skill 会自动触发。英文版为 [`SKILL.md`](skills/vibe-creating-prompt/SKILL.md)。
 
-### 作为可移植系统提示词（GPT、Gemini、本地模型……）
+### 在其他 LLM 中使用
 
-把 [`prompts/system-prompt.zh.md`](prompts/system-prompt.zh.md)（或 [`.en.md`](prompts/system-prompt.en.md)）粘贴为系统提示词 / 自定义指令，然后发送你的想法。配置细节见 [`prompts/README.md`](prompts/README.md)。
+Skill 就是一个自包含的 Markdown 文件。要在 Claude 之外复用同一套逻辑，把 [`SKILL.zh.md`](skills/vibe-creating-prompt/SKILL.zh.md)（或 [`SKILL.md`](skills/vibe-creating-prompt/SKILL.md)）的正文粘贴为任意 LLM（GPT、Gemini、本地模型）的系统提示词 / 自定义指令，然后发送你的想法。
 
 ## 你会得到什么
 
@@ -57,7 +57,6 @@ cp -r skills/vibe-creating-prompt ~/.claude/skills/
 
 ```
 skills/vibe-creating-prompt/   # Claude Agent Skill（SKILL.md + SKILL.zh.md）
-prompts/                       # 可移植、模型无关的系统提示词（EN + ZH）
 docs/
   philosophy.zh.md             # 创作理念（EN + ZH）
   examples/                    # 「灵感杂志」提示词画廊
