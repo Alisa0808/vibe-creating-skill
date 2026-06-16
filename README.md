@@ -16,9 +16,7 @@
 
 </div>
 
-**Vibe Creating** is an open-source, bilingual **prompt-engineering skill** that rewrites a rough idea, story, feeling, or over-specified shot script into a clean, **model-friendly text-to-video prompt** — and first judges whether your input even suits this style. It follows the open [Agent Skills](https://www.agentskills.io) standard (a single `SKILL.md`), so it runs in **Claude Code, Codex, OpenClaw, Hermes, Cursor**, and any compatible agent — or as a system prompt in any LLM. It works with AI video models like **Seedance 2.0, Sora, Kling, Veo, Runway, Pika, and Hailuo**.
-
-> Keywords: *AI video prompt · text-to-video prompt generator · prompt optimization · prompt rewriting · Seedance / Sora / Kling / Veo prompt guide · agent skill · Claude / Codex / OpenClaw / Hermes skill · generative AI video.*
+**Vibe Creating** is an open-source, bilingual **prompt-engineering skill** that rewrites a rough idea, story, feeling, or over-specified shot script into a clean, **model-friendly text-to-video prompt** — and first judges whether your input even suits this style. It follows the open [Agent Skills standard](https://www.agentskills.io) (a single `SKILL.md`), so it runs in **Claude Code, Codex, OpenClaw, Hermes, Cursor**, and any compatible agent — or as a system prompt in any LLM. It works with AI video models like **Seedance 2.0, Sora, Kling, Veo, Runway, Pika, and Hailuo**.
 
 ---
 
@@ -32,45 +30,43 @@ As text-to-video models get smarter, prompting gets *simpler*. Instead of over-s
 - 🤝 **Trust the Model** — drop low-value technical parameters; keep and *translate* the shot *intent*.
 - 🧭 **Judgment-first** — it decides whether your input even suits this style before rewriting, so it never flattens a precise shot list you actually wanted.
 
-It is **not** a "make everything shorter" tool. See [docs/philosophy.md](docs/philosophy.md) for the full idea.
+It is **not** a "make everything shorter" tool. Read [the full philosophy](docs/philosophy.md) for the idea behind it.
 
 ## 🧠 How it works
 
 The skill is *judgment-first*: it scores your input on three axes — **Scenario × Expression × Information** — picks the lightest action that fits, and always replies in the same four-part format.
 
-```mermaid
-flowchart TD
-    A([User input:<br/>idea · scene · script]) --> B{Suits Vibe Creating?}
-    B -->|"Low fit (UI demo,<br/>strict dialogue sync)"| K[Keep as-is<br/>explain the mismatch]
-    B -->|Yes| C{Enough info?<br/>4 layers present?}
-    C -->|"Missing anchor /<br/>action / style"| D[Ask first<br/>1–3 short questions]
-    C -->|Yes| E{How polished<br/>is it already?}
-    D --> E
-    E -->|Already strong| F[Pass-through]
-    E -->|Near-VC / messy| G[Light cleanup]
-    E -->|"Mixed / execution<br/>script"| H[Direct rewrite:<br/>strip tech params,<br/>translate intent]
-    F --> Z
-    G --> Z
-    H --> Z
-    K --> Z
-    Z([Four-part output:<br/>Judgment · Action · Result · Notes])
+```text
+Input  (idea · scene · script)
+  │
+  ├─ Suits Vibe Creating? ───── no ─────▶ keep as-is  (explain the mismatch)
+  │     │ yes
+  ├─ Enough info? (4 layers) ── no ─────▶ ask first   (1–3 short questions)
+  │     │ yes
+  └─ How polished already?
+        ├─ strong      ─▶ pass-through
+        ├─ near / messy ─▶ light cleanup
+        └─ execution    ─▶ direct rewrite  (strip params, translate intent)
+                                │
+                                ▼
+        Four-part output:  Judgment · Action · Result · Notes
 ```
 
 The four layers it checks for: **visual anchor** (the main subject), **action / state** (what's happening), **local tonality** (one mood word), and **video theme** (use case + visual style).
 
 ## 📦 Install
 
-The skill is one portable `SKILL.md` folder. Drop it into your agent's skills directory.
+The skill is one portable `SKILL.md` folder. Pick whichever option fits your setup.
 
-**One-liner (auto-detects your installed agents):**
+**Option 1 — One-liner (recommended).** Auto-detects your installed agents and copies the skill into each:
 
 ```bash
 npx github:Alisa0808/vibe-creating-skill
 ```
 
-Add `--all` to install for every agent, name agents explicitly (`… claude codex`), or target any folder with `--dir <path>`.
+Add `--all` for every known agent, name agents explicitly (`… claude codex`), or target any folder with `--dir <path>`.
 
-**Or clone and copy it yourself** — same file, different home per agent:
+**Option 2 — Clone and copy.** Same file, different home per agent:
 
 ```bash
 git clone https://github.com/Alisa0808/vibe-creating-skill.git
@@ -83,9 +79,10 @@ cp -r vibe-creating-skill/skills/vibe-creating-prompt <your-agent-skills-dir>/
 | Codex CLI | `~/.codex/skills/` |
 | OpenClaw | `~/.openclaw/skills/` |
 | Hermes | `~/.hermes/skills/` |
-| Any other LLM | paste [`SKILL.md`](skills/vibe-creating-prompt/SKILL.md) as the system prompt |
 
-Then restart your agent and describe what you want to film — e.g. *"a basketball kid hits a buzzer-beater three."* The Chinese edition is [`SKILL.zh.md`](skills/vibe-creating-prompt/SKILL.zh.md).
+**Option 3 — Any other LLM.** Paste the body of [the skill file](skills/vibe-creating-prompt/SKILL.md) (or [its Chinese edition](skills/vibe-creating-prompt/SKILL.zh.md)) as the system prompt / custom instructions in GPT, Gemini, a local model, etc.
+
+Then restart your agent and describe what you want to film — e.g. *"a basketball kid hits a buzzer-beater three."*
 
 ## 💬 What you get back
 
@@ -100,7 +97,19 @@ Every response uses a fixed four-part format:
 **You:** *Express the feeling of freedom.*
 **Skill:** *Judgment:* suits VC, but too abstract to render — no visual anchor. *Action:* **ask first** — "Who is free, and where? A child in open fields, a diver, a city rooftop at dawn? Any style — photoreal, anime, ink-wash?"
 
-See more in [docs/test-cases.md](docs/test-cases.md) and the [example gallery](docs/examples/).
+## 🎨 Examples
+
+One prompt per category — browse the [full example gallery](docs/examples/) for dozens more.
+
+> **[Cinematic narrative](docs/examples/cinematic-narrative.md) · suppressed grief** — A funeral in pouring rain, everyone's black umbrellas merged into one mass. A little boy without an umbrella stands at the edge, rain soaking his shirt transparent; he crouches, floats a folded paper boat in a puddle, and watches a raindrop sink it.
+
+> **[Light entertainment](docs/examples/light-entertainment.md) · evolution of the office worker** — Monday morning: a suited worker walks in and ages a little at every cubicle he passes — by his own seat he's white-haired. The screen reads "Monday 9:01." Photorealistic comedy.
+
+> **[Knowledge & physics](docs/examples/knowledge-and-physics.md) · Tang-dynasty Chang'an** — Dusk on Suzaku Avenue; a camel caravan of foreign merchants passes through the gate, silks swaying, tavern banners gilded by the setting sun, returning birds on the pagoda eaves. Cinematic, warm tones.
+
+> **[Surreal & dreamcore](docs/examples/surreal-dreamcore.md) · David, transmuted** — A fluorescent-green laser sweeps slowly down a white marble bust of David; where it passes, the matte marble becomes liquid mercury, and cyberpunk circuitry lights up and flows beneath the surface.
+
+There are also eight worked [input → output test cases](docs/test-cases.md) showing exactly how the skill judges and rewrites.
 
 ## 🚫 When NOT to use it
 
@@ -108,30 +117,48 @@ Vibe Creating is for atmosphere, emotion, narrative, and visual exploration. For
 
 ## ❓ FAQ
 
-### What is Vibe Creating?
+<details>
+<summary><b>What is Vibe Creating?</b></summary>
+
 Vibe Creating is a prompt-writing paradigm for AI video generation: instead of over-specifying camera parameters and shot-by-shot scripts, you describe the story and feeling and trust the model to interpret it. This repo packages that approach as a reusable prompt skill that rewrites your input into a model-friendly text-to-video prompt.
+</details>
 
-### How do I write a good AI video prompt?
+<details>
+<summary><b>How do I write a good AI video prompt?</b></summary>
+
 Cover four layers without naming them: a **visual anchor** (the main subject), an **action or state** (what's happening), a **local tonality** (one mood word), and a **video theme** (use case + visual style). Keep the story; drop low-value technical parameters. The skill does this for you and asks for whatever layer is missing.
+</details>
 
-### Which video models does this work with?
+<details>
+<summary><b>Which video models does this work with?</b></summary>
+
 Any text-to-video model — it was distilled from **Seedance 2.0**, and the same prompts work well with **Sora, Kling, Veo, Runway, Pika, and Hailuo**. The output is plain natural-language description, not model-specific syntax.
+</details>
 
-### Which agents does this work with?
+<details>
+<summary><b>Which agents does this work with?</b></summary>
+
 Any agent that supports the open Agent Skills (`SKILL.md`) standard — **Claude Code, Codex, OpenClaw, Hermes, Cursor**, and others — or any LLM at all, by pasting the skill as a system prompt.
+</details>
 
-### How is this different from just writing a longer, detailed prompt?
+<details>
+<summary><b>How is this different from just writing a longer, detailed prompt?</b></summary>
+
 Vibe Creating is not "longer" or "shorter" — it's *the right information*. It removes ineffective technical noise and keeps the story, emotion, and key imagery, so the model locks onto your intent. It also refuses to rewrite inputs that genuinely need precise control (dialogue sync, UI demos), instead of forcing every prompt into one style.
+</details>
 
-### Is this an official ByteDance / Seedance project?
-No. It's an independent, faithful open-source port of a publicly-shared methodology. See [Attribution & license](#-attribution--license) and [NOTICE](NOTICE).
+<details>
+<summary><b>Is this an official ByteDance / Seedance project?</b></summary>
+
+No. It's an independent, faithful open-source port of a publicly-shared methodology. See [Attribution & license](#-attribution--license) and the [NOTICE](NOTICE) file.
+</details>
 
 ## 🤝 Contributing
 
-Translations, new gallery prompts, and refinements welcome — see [CONTRIBUTING.md](CONTRIBUTING.md).
+Translations, new gallery prompts, and refinements welcome — see the [contributing guide](CONTRIBUTING.md).
 
 ## 📄 Attribution & license
 
-The **Vibe Creating** paradigm, the original skill draft, and the example prompts originate from **ByteDance / Volcengine** (created with **Seedance 2.0**). This repository is an independent, faithful English/bilingual port of that publicly-shared methodology, not an official product. See [NOTICE](NOTICE) for full attribution.
+The **Vibe Creating** paradigm, the original skill draft, and the example prompts originate from **ByteDance / Volcengine** (created with **Seedance 2.0**). This repository is an independent, faithful English/bilingual port of that publicly-shared methodology, not an official product. See the [NOTICE](NOTICE) file for full attribution.
 
 Code and documentation in this repo are released under the [MIT License](LICENSE). The underlying paradigm and any trademarks remain with their original owners.
