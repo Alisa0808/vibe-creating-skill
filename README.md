@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🎬 Vibe Creating
+<img src="assets/social-preview.png" alt="Vibe Creating — an open-source AI video-prompt skill for Seedance, Sora, Kling and Veo" width="820">
 
 **An open-source AI video-prompt skill — for Seedance, Sora, Kling, Veo & more**
 

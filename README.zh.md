@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🎬 Vibe Creating
+<img src="assets/social-preview.png" alt="Vibe Creating —— 开源 AI 视频提示词 Skill,适配 Seedance、Sora、Kling、Veo" width="820">
 
 **开源的 AI 视频提示词 Skill —— 适配 Seedance、Sora、Kling、Veo 等**
 
