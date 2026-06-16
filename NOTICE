@@ -1,0 +1,38 @@
+Vibe Creating Prompt Skill
+==========================
+
+This project is an independent, community-made English/bilingual port of the
+"Vibe Creating" (Vibe Filming) creative paradigm and its prompt-skill draft.
+
+ORIGIN & ATTRIBUTION
+--------------------
+The Vibe Creating paradigm, the original "Vibe Creating 提示词 Skill.md" draft,
+the four-layer prompt model, the decision framework, and the example prompts in
+docs/examples/ all originate from:
+
+    ByteDance / Volcano Engine (火山引擎)
+
+and were published in their "Vibe Creating Practice Handbook," produced with the
+Seedance 2.0 video-generation model.
+
+This repository is NOT an official ByteDance / Volcano Engine product, is not
+affiliated with or endorsed by them, and does not represent them. It exists to
+make a publicly-shared methodology easier to adopt in English and across tools.
+
+All trademarks — including "Seedance," "Volcano Engine," and "火山引擎" — are the
+property of their respective owners.
+
+CONTENT NOTES
+-------------
+- The example prompts have been translated to English with their tone and intent
+  preserved; the original Chinese is included alongside for reference.
+- The "literary visualization" examples are ORIGINAL PARAPHRASES written in the
+  spirit of common narrative moods. They are not quotations of any real literary
+  work, in keeping with the original handbook's stated intent to respect authors'
+  rights. Do not treat them as authoritative quotations.
+
+LICENSE
+-------
+The code and documentation authored in this repository are released under the
+MIT License (see LICENSE). The underlying paradigm and any trademarks remain
+with their original owners; this license does not grant rights to those.

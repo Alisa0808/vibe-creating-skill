@@ -1,0 +1,28 @@
+# macOS
+.DS_Store
+
+# Editors
+.vscode/
+.idea/
+*.swp
+
+# Env / secrets
+.env
+.env.*
+*.local
+
+# Node / Python (in case examples are added later)
+node_modules/
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Generated media (this is a prompt skill — keep clips out of the repo)
+*.mp4
+*.mov
+*.png
+*.jpg
+*.jpeg
+*.gif
+!docs/**/*.svg

@@ -1,0 +1,79 @@
+# Vibe Creating Prompt Skill
+
+> Let creation return to expression. An open-source, English port of the **Vibe Creating** video-prompt skill — packaged as a Claude Agent Skill and a portable system prompt for any LLM.
+
+[English](README.md) · [中文](README.zh.md) · MIT License
+
+---
+
+## What is Vibe Creating?
+
+As text-to-video models get smarter, prompting gets *simpler*. Instead of over-specifying focal lengths, shot numbers, and frame-by-frame scripts, you focus on **telling the story** and **trust the model** to find the right shots, light, and rhythm.
+
+**Vibe Creating** is that paradigm — introduced by ByteDance / Volcano Engine alongside the **Seedance 2.0** model. This repo turns its methodology into a reusable **prompt skill**:
+
+- 🎯 **Focus on Story** — describe the situation, the texture of the air, the flow of emotion; let the model interpret.
+- 🤝 **Trust the Model** — drop low-value technical parameters; keep and *translate* the shot *intent*.
+- 🧭 **Judgment-first** — it decides whether your input even suits this style before rewriting, so it never flattens a precise shot list you actually wanted.
+
+It is **not** a "make everything shorter" tool. See [docs/philosophy.md](docs/philosophy.md) for the full idea.
+
+## The skill in one paragraph
+
+Given a rough idea, a single scene, an emotional image, a multi-shot description, or an over-specified script, the skill: (1) judges fit using a **Scenario × Expression × Information** framework, (2) picks the lightest action — *pass-through, light cleanup, direct rewrite, ask first, keep as-is,* or *optional VC version* — and (3) returns a clean, generation-ready prompt while preserving any dialogue, voiceover, music, SFX, and hard constraints you specified.
+
+## Use it
+
+### As a Claude Agent Skill (Claude Code / Claude.ai / Agent SDK)
+
+```bash
+# Copy the skill into your personal skills directory
+cp -r skills/vibe-creating-prompt ~/.claude/skills/
+```
+
+Restart Claude, then just describe what you want to film — e.g. *"a basketball kid hits a buzzer-beater three"* — and the skill triggers automatically. The Chinese edition is [`SKILL.zh.md`](skills/vibe-creating-prompt/SKILL.zh.md).
+
+### As a portable system prompt (GPT, Gemini, local models, …)
+
+Paste [`prompts/system-prompt.en.md`](prompts/system-prompt.en.md) (or [`.zh.md`](prompts/system-prompt.zh.md)) as the system prompt / custom instructions, then send your idea. Setup details: [`prompts/README.md`](prompts/README.md).
+
+## What you get back
+
+Every response uses a fixed four-part format:
+
+> **Judgment** — does it suit VC, is it already usable, is the info enough
+> **Action** — one of *pass-through / light cleanup / direct rewrite / ask first / keep as-is / optional VC version*
+> **Result** — the rewritten prompt, the kept text, or a clarifying question
+> **Notes** *(if any)* — what technical control was stripped, what constraints were kept
+
+### Example
+
+**You:** *Express the feeling of freedom.*
+**Skill:** *Judgment:* suits VC, but too abstract to render — no visual anchor. *Action:* **ask first** — "Who is free, and where? A child in open fields, a diver, a city rooftop at dawn? Any style — photoreal, anime, ink-wash?"
+
+See more in [docs/test-cases.md](docs/test-cases.md) and the [example gallery](docs/examples/).
+
+## Repository layout
+
+```
+skills/vibe-creating-prompt/   # the Claude Agent Skill (SKILL.md + SKILL.zh.md)
+prompts/                       # portable, model-agnostic system prompt (EN + ZH)
+docs/
+  philosophy.md                # the manifesto (EN + ZH)
+  examples/                    # the "inspiration magazine" prompt gallery
+  test-cases.md                # 8 worked input → output cases
+```
+
+## When NOT to use it
+
+Vibe Creating is for atmosphere, emotion, narrative, and visual exploration. For **precise word-for-word dialogue sync, strict shot-by-shot execution, UI demos, or step-by-step tutorials**, traditional precise prompting is the better tool — and the skill will tell you so rather than force a rewrite.
+
+## Contributing
+
+Translations, new gallery prompts, and refinements welcome — see [CONTRIBUTING.md](CONTRIBUTING.md).
+
+## Attribution & license
+
+The **Vibe Creating** paradigm, the original skill draft, and the example prompts originate from **ByteDance / Volcano Engine** (created with **Seedance 2.0**). This repository is an independent, faithful English/bilingual port of that publicly-shared methodology, not an official product. See [NOTICE](NOTICE) for full attribution.
+
+Code and documentation in this repo are released under the [MIT License](LICENSE). The underlying paradigm and any trademarks remain with their original owners.
