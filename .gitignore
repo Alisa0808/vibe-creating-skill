@@ -26,3 +26,4 @@ venv/
 *.jpeg
 *.gif
 !docs/**/*.svg
+!assets/cases/*.mp4

@@ -95,19 +95,51 @@ cp -r vibe-creating-skill/skills/vibe-creating-prompt <your-agent-skills-dir>/
 
 Then restart your agent and describe what you want to film — e.g. *"a basketball kid hits a buzzer-beater three."*
 
-## 🎨 Examples
+## 🎬 Before & after
 
-One prompt per category — browse the [full example gallery](docs/examples/) for dozens more.
+Real test cases from the original handbook — the **same scene**, a regular prompt vs. a Vibe Creating prompt, with the clip each one generated (videos from Volcengine's Seedance 2.0). See all eight in the [worked test cases](docs/test-cases.md), and browse the [example gallery](docs/examples/) for dozens more prompts.
 
-> **[Cinematic narrative](docs/examples/cinematic-narrative.md) · suppressed grief** — A funeral in pouring rain, everyone's black umbrellas merged into one mass. A little boy without an umbrella stands at the edge, rain soaking his shirt transparent; he crouches, floats a folded paper boat in a puddle, and watches a raindrop sink it.
+### Case 2 · near-VC input → light cleanup
 
-> **[Light entertainment](docs/examples/light-entertainment.md) · evolution of the office worker** — Monday morning: a suited worker walks in and ages a little at every cubicle he passes — by his own seat he's white-haired. The screen reads "Monday 9:01." Photorealistic comedy.
+<table>
+<tr><th width="50%">Regular prompt</th><th width="50%">✅ Vibe Creating</th></tr>
+<tr>
+<td><video src="https://github.com/Alisa0808/vibe-creating-skill/raw/main/assets/cases/case2-regular.mp4" controls width="100%"></video></td>
+<td><video src="https://github.com/Alisa0808/vibe-creating-skill/raw/main/assets/cases/case2-vibe.mp4" controls width="100%"></video></td>
+</tr>
+<tr>
+<td><sub>A person stands in a subway car flooded with seawater; a whale swims past the window outside. Quiet and suffocating.</sub></td>
+<td><sub>In a subway car flooded by seawater, a person stands quietly, the interior half-submerged in dim blue water-light… a giant whale glides slowly past the window without a sound, a near-dreamlike pressure. The air feels utterly drained — calm yet impossible to breathe in.</sub></td>
+</tr>
+</table>
 
-> **[Knowledge & physics](docs/examples/knowledge-and-physics.md) · Tang-dynasty Chang'an** — Dusk on Suzaku Avenue; a camel caravan of foreign merchants passes through the gate, silks swaying, tavern banners gilded by the setting sun, returning birds on the pagoda eaves. Cinematic, warm tones.
+**Comparison —** the input was already close to Vibe Creating, so both clips are similar; the rewrite mainly sharpens the emotional close (awe) and the implied underwater sound design.
 
-> **[Surreal & dreamcore](docs/examples/surreal-dreamcore.md) · David, transmuted** — A fluorescent-green laser sweeps slowly down a white marble bust of David; where it passes, the matte marble becomes liquid mercury, and cyberpunk circuitry lights up and flows beneath the surface.
+### Case 3 · execution shot-script → direct rewrite
 
-There are also eight worked [input → output test cases](docs/test-cases.md) showing exactly how the skill judges and rewrites.
+<table>
+<tr><th width="50%">Regular prompt</th><th width="50%">✅ Vibe Creating</th></tr>
+<tr>
+<td><video src="https://github.com/Alisa0808/vibe-creating-skill/raw/main/assets/cases/case3-regular.mp4" controls width="100%"></video></td>
+<td><video src="https://github.com/Alisa0808/vibe-creating-skill/raw/main/assets/cases/case3-vibe.mp4" controls width="100%"></video></td>
+</tr>
+<tr>
+<td><sub>A 3-shot execution script — framing terms (wide → full → ECU), dolly notes, timecodes, SFX cues, SSS-skin VFX notes — for a girl in oversized yellow boots hesitating at a puddle, then jumping in. <i>(full text in the <a href="docs/test-cases.md">test cases</a>)</i></sub></td>
+<td><sub>The rain has just stopped, cold mist in the old alley, puddles mirroring moss-grown walls. A girl in oversized yellow boots stops at the largest puddle, torn between jumping and not daring — then leaps in with both feet, water bursting into bright points of light, a dozing ginger cat scrambling away, and she lifts her head into an unreserved, crisp laugh.</sub></td>
+</tr>
+</table>
+
+**Comparison —** the input is a high-precision shot list, but the underlying scene is a complete emotional arc. After the technical params are stripped, the core beats (hesitation → jump → laugh) survive and the rhythm reads clearer — no parameters needed.
+
+### Case 4 · heavy precision control → rewrite, with disclosure
+
+<table>
+<tr><th width="60%">✅ Vibe Creating result</th><th width="40%">What happened</th></tr>
+<tr>
+<td><video src="https://github.com/Alisa0808/vibe-creating-skill/raw/main/assets/cases/case4-vibe.mp4" controls width="100%"></video></td>
+<td><sub>Input was a cinematic pre-viz packed with 21mm, f/11, 1/250s, EV+4, ISO 12800, HDR, cold-blue grading. The skill rewrote it into a natural, atmospheric prompt — a lone woman warrior, volumetric shafts of light, a tense half-silhouette — and <b>told the user</b> it had stripped the parameters, offering a parameter-preserving version on request.</sub></td>
+</tr>
+</table>
 
 ## 🚫 When NOT to use it
 
