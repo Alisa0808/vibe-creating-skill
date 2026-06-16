@@ -1,0 +1,43 @@
+{
+  "name": "vibe-creating-skill",
+  "version": "1.0.0",
+  "description": "Vibe Creating — an open-source, bilingual Agent Skill that rewrites a rough idea into a model-ready text-to-video prompt (Seedance, Sora, Kling, Veo). Works with Claude Code, Codex, OpenClaw, Hermes, Cursor, and any SKILL.md agent.",
+  "bin": {
+    "vibe-creating-skill": "bin/install.js"
+  },
+  "files": [
+    "skills",
+    "bin",
+    "README.md",
+    "LICENSE",
+    "NOTICE"
+  ],
+  "scripts": {
+    "install-skill": "node bin/install.js"
+  },
+  "keywords": [
+    "vibe-creating",
+    "ai-video",
+    "text-to-video",
+    "prompt-engineering",
+    "prompt-optimization",
+    "agent-skill",
+    "claude-skill",
+    "codex",
+    "openclaw",
+    "hermes",
+    "seedance",
+    "sora",
+    "kling",
+    "veo"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/Alisa0808/vibe-creating-skill",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alisa0808/vibe-creating-skill.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Alisa0808/vibe-creating-skill/issues"
+  }
+}
