@@ -104,14 +104,16 @@ Real test cases from the original handbook — the **same scene**, a regular pro
 <table>
 <tr><th width="50%">Regular prompt</th><th width="50%">✅ Vibe Creating</th></tr>
 <tr>
-<td><video src="https://github.com/Alisa0808/vibe-creating-skill/raw/main/assets/cases/case2-regular.mp4" controls width="100%"></video></td>
-<td><video src="https://github.com/Alisa0808/vibe-creating-skill/raw/main/assets/cases/case2-vibe.mp4" controls width="100%"></video></td>
-</tr>
-<tr>
-<td><sub>A person stands in a subway car flooded with seawater; a whale swims past the window outside. Quiet and suffocating.</sub></td>
-<td><sub>In a subway car flooded by seawater, a person stands quietly, the interior half-submerged in dim blue water-light… a giant whale glides slowly past the window without a sound, a near-dreamlike pressure. The air feels utterly drained — calm yet impossible to breathe in.</sub></td>
+<td><img src="assets/cases/case2-regular.gif" width="100%"></td>
+<td><img src="assets/cases/case2-vibe.gif" width="100%"></td>
 </tr>
 </table>
+
+<sub>▶ Full clips with sound: <a href="assets/cases/case2-regular.mp4">regular</a> · <a href="assets/cases/case2-vibe.mp4">Vibe Creating</a></sub>
+
+**Regular prompt** — A person stands in a subway car flooded with seawater; a whale swims past the window outside. Quiet and suffocating.
+
+**✅ Vibe Creating** — In a subway car flooded by seawater, a person stands quietly, the car's interior half-submerged in dim blue water-light; handrails, seats, and windows are all steeped in a cold, damp silence. The world outside has become the deep sea — a giant whale glides slowly past the window, its vast silhouette passing the long glass without a sound, bringing a near-dreamlike pressure. The whole frame is so quiet you can only feel the presence of the water; the light sways, the air feels utterly drained — calm yet impossible to breathe in.
 
 **Comparison —** the input was already close to Vibe Creating, so both clips are similar; the rewrite mainly sharpens the emotional close (awe) and the implied underwater sound design.
 
@@ -120,26 +122,45 @@ Real test cases from the original handbook — the **same scene**, a regular pro
 <table>
 <tr><th width="50%">Regular prompt</th><th width="50%">✅ Vibe Creating</th></tr>
 <tr>
-<td><video src="https://github.com/Alisa0808/vibe-creating-skill/raw/main/assets/cases/case3-regular.mp4" controls width="100%"></video></td>
-<td><video src="https://github.com/Alisa0808/vibe-creating-skill/raw/main/assets/cases/case3-vibe.mp4" controls width="100%"></video></td>
-</tr>
-<tr>
-<td><sub>A 3-shot execution script — framing terms (wide → full → ECU), dolly notes, timecodes, SFX cues, SSS-skin VFX notes — for a girl in oversized yellow boots hesitating at a puddle, then jumping in. <i>(full text in the <a href="docs/test-cases.md">test cases</a>)</i></sub></td>
-<td><sub>The rain has just stopped, cold mist in the old alley, puddles mirroring moss-grown walls. A girl in oversized yellow boots stops at the largest puddle, torn between jumping and not daring — then leaps in with both feet, water bursting into bright points of light, a dozing ginger cat scrambling away, and she lifts her head into an unreserved, crisp laugh.</sub></td>
+<td><img src="assets/cases/case3-regular.gif" width="100%"></td>
+<td><img src="assets/cases/case3-vibe.gif" width="100%"></td>
 </tr>
 </table>
+
+<sub>▶ Full clips with sound: <a href="assets/cases/case3-regular.mp4">regular</a> · <a href="assets/cases/case3-vibe.mp4">Vibe Creating</a></sub>
+
+<details>
+<summary><b>Regular prompt</b> — a 3-shot execution script (click to expand)</summary>
+
+> **Shot 1 — a damp memory, setup (00:00–00:03) | 3s.** Framing: wide shot → full shot. Camera: static frame. Image: the heavy rain has just stopped; cold-toned mist fills the air. The flagstone road is covered in puddles, mirroring the mottled, peeling, moss-grown old walls on both sides. At the edge of frame, a pair of bright-yellow rubber rain boots, far too big for the feet inside them, slowly steps into view. The little girl, wearing the yellow boots, walks carefully to the edge of the largest puddle and stops, looking down at the huge reflection in the water. SFX: the damp, empty wind after rain; the monotonous drip off the roof tiles; the faint "squeak" of rain boots on wet flagstones.
+> **Shot 2 — the standoff before the key action (00:03–00:08) | 5s (the emphasis).** Framing: extreme close-up → close-up. Camera: an extremely slow push-in. Image: the camera fixes on the girl's cheek. Her brows are tightly knit, her gaze darting between the huge puddle and the oversized yellow boots. She bites her lower lip; her nose wrinkles slightly. She takes a deep breath, her whole face showing an intensely vivid inner standoff of "I want to jump… but I don't dare." At the end of second 8, a heavy, suppressed heartbeat boom cuts in. VFX notes: extremely fine facial texture (SSS skin material); micro-capillary response under the skin; the catch of the puddle's reflected light in her eyes; raindrops dripping down her hair.
+> **Shot 3 — the burst and its afterglow, reaction (00:08–00:15) | 7s.** Framing: low-angle wide shot → static medium shot. Camera: at the instant the action bursts, the camera snaps back to a fixed focus. Image: the girl drops all hesitation and jumps in with both feet; high-speed, the water bursts into countless diamond-like droplets. A dozing ginger cat is startled awake, fur on end, scrambling onto a higher wall. The frame returns to a medium shot: she lifts her head into an intensely brilliant, pure, crisp laugh, eyes wet. SFX: a violent, bass-heavy splash; the cat's scramble; clear child laughter. VFX notes: volumetric fluid simulation; slow-motion droplet physics; color saturation lifts slightly as her laughter bursts.
+
+</details>
+
+**✅ Vibe Creating** — The rain has just stopped; cold mist still floats in the old alley, puddles covering the flagstone road, mirroring the mottled, peeling, moss-grown walls on both sides. A pair of oversized bright-yellow rain boots walks slowly into frame; the little girl steps carefully to the largest puddle and stops, looking down at the swaying reflection. In the air there's only the damp, empty wind after rain, the intermittent dripping from the eaves, and the small sound her boots make on the wet flagstones. She stares at the puddle, then glances down at her boots, brows knit tight, lips pressed — as if waging a solemn, childlike contest with herself. She clearly wants badly to jump, yet hesitates at the very last moment. The next second she makes up her mind and jumps in with both feet; the water bursts open with a roar, great splashes shattering into bright points of light. A dozing ginger cat springs up in fright and scrambles onto a higher wall. As the water settles, she lifts her head and breaks into an unreserved, clear and brilliant laugh, eyes faintly wet — like the moment a rain-washed world is finally lit up by her own hand.
 
 **Comparison —** the input is a high-precision shot list, but the underlying scene is a complete emotional arc. After the technical params are stripped, the core beats (hesitation → jump → laugh) survive and the rhythm reads clearer — no parameters needed.
 
 ### Case 4 · heavy precision control → rewrite, with disclosure
 
 <table>
-<tr><th width="60%">✅ Vibe Creating result</th><th width="40%">What happened</th></tr>
-<tr>
-<td><video src="https://github.com/Alisa0808/vibe-creating-skill/raw/main/assets/cases/case4-vibe.mp4" controls width="100%"></video></td>
-<td><sub>Input was a cinematic pre-viz packed with 21mm, f/11, 1/250s, EV+4, ISO 12800, HDR, cold-blue grading. The skill rewrote it into a natural, atmospheric prompt — a lone woman warrior, volumetric shafts of light, a tense half-silhouette — and <b>told the user</b> it had stripped the parameters, offering a parameter-preserving version on request.</sub></td>
-</tr>
+<tr><td width="50%"><img src="assets/cases/case4-vibe.gif" width="100%"></td>
+<td width="50%"><sub>The skill stripped the technical parameters, rewrote the scene into natural language — and <b>told the user</b> it had done so, offering a parameter-preserving version on request.</sub></td></tr>
 </table>
+
+<sub>▶ Full clip with sound: <a href="assets/cases/case4-vibe.mp4">Vibe Creating</a></sub>
+
+<details>
+<summary><b>Regular prompt</b> — a parameter-packed pre-viz (click to expand)</summary>
+
+> Cinematic pre-viz shot, hyperrealist cinematic feel. Shot with a 21mm wide-angle prime cine lens and a large-format digital sensor, presenting a continuous, slow, tension-building dolly-in with a slight, natural Steadicam handheld sway. The frame follows the rule of thirds; a lone woman warrior enters alone from the left foreground, stepping cautiously toward the depths of a dark, deep cave. Dramatically high-contrast volumetric light (the Tyndall effect) pours down through a narrow crack in the cave roof; the camera is set to f/11 for deep depth of field, paired with a fast 1/250s shutter to freeze the thick suspended dust. The strong light creates extreme backlight (EV+4), pressing the warrior's layered gear and the heavy great-blade on her back into a tense half-silhouette. The surroundings are damp and oppressive; HDR capture with ISO 12800 brings natural low-light noise and film grain. The whole uses a desaturated dark color grading, leaning into cold-blue tones and crushed blacks.
+
+</details>
+
+**✅ Vibe Creating** — A hyperrealist cinematic pre-viz shot. In the cold-blue depths of a cave, a lone woman warrior steps slowly from the left foreground into the darkness, a heavy great-blade on her back, her steps cautious and alert. The camera presses forward in a slow, oppressive wide angle with a slight, natural following sway. Through a narrow crack in the cave roof, dramatic volumetric light pours down, piercing the deep gloom — drifting dust clearly visible in the beams. The strong backlight crushes her into a tense half-silhouette, leaving only the cold, hard outline of her gear and blade. The rock walls are wet and rough, faint reflections flickering in the deep shadows; high-contrast, low-saturation, heavy blacks — oppressive, deathly still, danger about to break.
+
+**Disclosure (shown to the user) —** "I removed the lens/exposure/grading parameters and translated them into their visual results. If you'd like to keep specific parameters or the pre-viz structure, tell me and I'll give you a constraint-preserving version."
 
 ## 🚫 When NOT to use it
 
