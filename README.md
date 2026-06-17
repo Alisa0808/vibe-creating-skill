@@ -16,7 +16,7 @@
 
 </div>
 
-**Vibe Creating** is an open-source, bilingual **prompt-engineering skill** that rewrites a rough idea, story, feeling, or over-specified shot script into a clean, **model-friendly text-to-video prompt** — and first judges whether your input even suits this style. It follows the open [Agent Skills standard](https://agentskills.io) (a single `SKILL.md`), so it runs in **Claude Code, Codex, OpenClaw, Hermes, Cursor**, and any compatible agent — or as a system prompt in any LLM. It works with AI video models like **Seedance 2.0, Sora, Kling, Veo, Runway, Pika, and Hailuo** — all reachable through one API on [Atlas Cloud](https://www.atlascloud.ai/?utm_source=github&utm_campaign=vibe-creating-skill).
+**Vibe Creating** is an open-source, bilingual **prompt-engineering skill** that rewrites a rough idea, story, feeling, or over-specified shot script into a clean, **model-friendly text-to-video prompt** — and first judges whether your input even suits this style. It follows the open [Agent Skills standard](https://agentskills.io) (a single `SKILL.md`), so it runs in **Claude Code, Codex, OpenClaw, Hermes, Cursor**, and any compatible agent — or as a system prompt in any LLM. It works with any text-to-video model — **Seedance 2.0, Sora, Kling, Veo, Runway, Pika, Hailuo**, and more — several of which (**Seedance, Kling, Veo, Hailuo**, …) are reachable through one API on [Atlas Cloud](https://www.atlascloud.ai/?utm_source=github&utm_campaign=vibe-creating-skill).
 
 ---
 
@@ -167,7 +167,7 @@ Real test cases from the original handbook — the **same scene**, a regular pro
 
 ## 🚀 Generate it
 
-Vibe Creating writes the prompt — to turn it into an actual clip, send the rewritten prompt to any text-to-video model. The quickest path is [Atlas Cloud](https://www.atlascloud.ai/?utm_source=github&utm_campaign=vibe-creating-skill), one unified API for **Seedance, Sora, Kling, Veo**, and more.
+Vibe Creating writes the prompt — to turn it into an actual clip, send the rewritten prompt to any text-to-video model. The quickest path is [Atlas Cloud](https://www.atlascloud.ai/?utm_source=github&utm_campaign=vibe-creating-skill), one unified API for **Seedance, Kling, Veo, Hailuo**, and more.
 
 **Let your agent do it end-to-end** — add the official skill or MCP, then ask it to rewrite *and* generate:
 
@@ -188,7 +188,7 @@ export ATLASCLOUD_API_KEY="…"   # get one at atlascloud.ai/console/api-keys
 curl -X POST https://api.atlascloud.ai/api/v1/model/generateVideo \
   -H "Authorization: Bearer $ATLASCLOUD_API_KEY" \
   -H "Content-Type: application/json" \
-  -d '{"model":"bytedance/seedance-2.0/text-to-video","prompt":"<your Vibe Creating prompt>","aspect_ratio":"16:9"}'
+  -d '{"model":"bytedance/seedance-2.0/text-to-video","prompt":"<your Vibe Creating prompt>","ratio":"16:9"}'
 ```
 
 [Atlas Cloud skill](https://github.com/AtlasCloudAI/atlas-cloud-skills) · [MCP server](https://github.com/AtlasCloudAI/mcp-server) · [browse models](https://www.atlascloud.ai/models?utm_source=github&utm_campaign=vibe-creating-skill) · [get an API key](https://www.atlascloud.ai/console/api-keys?utm_source=github&utm_campaign=vibe-creating-skill)
