@@ -191,7 +191,7 @@ curl -X POST https://api.atlascloud.ai/api/v1/model/generateVideo \
   -d '{"model":"bytedance/seedance-2.0/text-to-video","prompt":"<你的 Vibe Creating 提示词>","aspect_ratio":"16:9"}'
 ```
 
-[Atlas Cloud skill](https://github.com/AtlasCloudAI/atlas-cloud-skills) · [MCP server](https://www.npmjs.com/package/atlascloud-mcp) · [浏览模型](https://www.atlascloud.ai/models?utm_source=github&utm_campaign=vibe-creating-skill) · [获取 API Key](https://www.atlascloud.ai/console/api-keys?utm_source=github&utm_campaign=vibe-creating-skill)
+[Atlas Cloud skill](https://github.com/AtlasCloudAI/atlas-cloud-skills) · [MCP server](https://github.com/AtlasCloudAI/mcp-server) · [浏览模型](https://www.atlascloud.ai/models?utm_source=github&utm_campaign=vibe-creating-skill) · [获取 API Key](https://www.atlascloud.ai/console/api-keys?utm_source=github&utm_campaign=vibe-creating-skill)
 
 <sub>利益披露:本仓库由 Atlas Cloud 的成员维护。Skill 本身与模型 / 厂商无关——任意文生视频 API 都能用。</sub>
 

@@ -191,7 +191,7 @@ curl -X POST https://api.atlascloud.ai/api/v1/model/generateVideo \
   -d '{"model":"bytedance/seedance-2.0/text-to-video","prompt":"<your Vibe Creating prompt>","aspect_ratio":"16:9"}'
 ```
 
-[Atlas Cloud skill](https://github.com/AtlasCloudAI/atlas-cloud-skills) · [MCP server](https://www.npmjs.com/package/atlascloud-mcp) · [browse models](https://www.atlascloud.ai/models?utm_source=github&utm_campaign=vibe-creating-skill) · [get an API key](https://www.atlascloud.ai/console/api-keys?utm_source=github&utm_campaign=vibe-creating-skill)
+[Atlas Cloud skill](https://github.com/AtlasCloudAI/atlas-cloud-skills) · [MCP server](https://github.com/AtlasCloudAI/mcp-server) · [browse models](https://www.atlascloud.ai/models?utm_source=github&utm_campaign=vibe-creating-skill) · [get an API key](https://www.atlascloud.ai/console/api-keys?utm_source=github&utm_campaign=vibe-creating-skill)
 
 <sub>Disclosure: this repo is maintained by folks at Atlas Cloud. The skill itself is model- and provider-agnostic — any text-to-video API works.</sub>
 
