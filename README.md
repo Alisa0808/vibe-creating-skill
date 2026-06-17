@@ -16,7 +16,7 @@
 
 </div>
 
-**Vibe Creating** is an open-source, bilingual **prompt-engineering skill** that rewrites a rough idea, story, feeling, or over-specified shot script into a clean, **model-friendly text-to-video prompt** — and first judges whether your input even suits this style. It follows the open [Agent Skills standard](https://agentskills.io) (a single `SKILL.md`), so it runs in **Claude Code, Codex, OpenClaw, Hermes**, and any agent on the same standard — or as a rule (Cursor) or system prompt (GPT, Gemini, any LLM). It works with any text-to-video model — **Seedance 2.0, Sora, Kling, Veo, Runway, Pika, Hailuo**, and more — several of which (**Seedance, Kling, Veo, Hailuo**, …) are reachable through one API on [Atlas Cloud](https://www.atlascloud.ai/?utm_source=github&utm_campaign=vibe-creating-skill).
+**Vibe Creating** is an open-source, bilingual **prompt-engineering skill** that rewrites a rough idea, story, feeling, or over-specified shot script into a clean, **model-friendly text-to-video prompt** — and first judges whether your input even suits this style. It follows the open [Agent Skills standard](https://agentskills.io) (a single `SKILL.md`), so it runs in **Claude Code, Codex, OpenClaw, Hermes**, and any agent on the same standard — or as a rule (Cursor) or system prompt (GPT, Gemini, any LLM). It works with any text-to-video model, and you can run many of them through one API on [Atlas Cloud](https://www.atlascloud.ai/?utm_source=github&utm_campaign=vibe-creating-skill) — **Seedance 2.0, Kling, Veo, Hailuo, Wan, Vidu, Gemini Omni, and Grok Imagine**, among others.
 
 ---
 
@@ -167,7 +167,7 @@ Real test cases from the original handbook — the **same scene**, a regular pro
 
 ## 🚀 Generate it
 
-Vibe Creating writes the prompt — to turn it into an actual clip, send the rewritten prompt to any text-to-video model. The quickest path is [Atlas Cloud](https://www.atlascloud.ai/?utm_source=github&utm_campaign=vibe-creating-skill), one unified API for **Seedance, Kling, Veo, Hailuo**, and more.
+Vibe Creating writes the prompt — to turn it into an actual clip, send the rewritten prompt to any text-to-video model. The quickest path is [Atlas Cloud](https://www.atlascloud.ai/?utm_source=github&utm_campaign=vibe-creating-skill), one unified API for **Seedance 2.0, Kling, Veo, Hailuo, Wan, Vidu, Gemini Omni, Grok Imagine**, and more.
 
 **Let your agent do it end-to-end** — add the official skill or MCP, then ask it to rewrite *and* generate:
 
