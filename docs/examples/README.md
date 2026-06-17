@@ -2,7 +2,7 @@
 
 A gallery of Vibe Creating prompts, organized by the scenarios where the style shines. Each entry shows the **English Vibe prompt** (use it as-is or as a template), with the **original Chinese** kept in a collapsible block.
 
-> These prompts came from ByteDance / Volcengine's *Vibe Creating Practice Handbook* (generated with Seedance 2.0). To respect literary authors' rights, the "literary" examples are **original paraphrases** written in the spirit of common narrative moods — not quotations of real works. See [NOTICE](../../NOTICE).
+> These prompts came from ByteDance / Volcengine's *Vibe Creating Practice Handbook* ([original, in Chinese](https://bytedance.larkoffice.com/docx/FUHudm80VoGJRcxXykzcpNrQnj3); generated with Seedance 2.0). To respect literary authors' rights, the "literary" examples are **original paraphrases** written in the spirit of common narrative moods — not quotations of real works. See [NOTICE](../../NOTICE).
 
 Vibe Creating is **better at** atmosphere, emotion, narrative feel, and visual association. It is **not** the right tool for precise dialogue sync, strict shot-by-shot execution, UI demos, or step-by-step instructions — see [philosophy.md](../philosophy.md).
 

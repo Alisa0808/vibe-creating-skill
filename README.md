@@ -243,6 +243,6 @@ Translations, new gallery prompts, and refinements welcome — see the [contribu
 
 ## 📄 Attribution & license
 
-The **Vibe Creating** paradigm, the original skill draft, and the example prompts originate from **ByteDance / Volcengine** (created with **Seedance 2.0**). This repository is an independent, faithful English/bilingual port of that publicly-shared methodology, not an official product. See the [NOTICE](NOTICE) file for full attribution.
+The **Vibe Creating** paradigm, the original skill draft, and the example prompts originate from **ByteDance / Volcengine** (created with **Seedance 2.0**). This repository is an independent, faithful English/bilingual port of that publicly-shared methodology, not an official product. Original sources (in Chinese): [Practice Handbook](https://bytedance.larkoffice.com/docx/FUHudm80VoGJRcxXykzcpNrQnj3) · [Prompt Skill draft](https://bytedance.larkoffice.com/docx/AVJddCKUmoj6j7x08jbcRBzon8b). See the [NOTICE](NOTICE) file for full attribution.
 
 Code and documentation in this repo are released under the [MIT License](LICENSE). The underlying paradigm and any trademarks remain with their original owners.

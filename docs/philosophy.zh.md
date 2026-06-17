@@ -1,6 +1,6 @@
 # Vibe Creating —— 创作理念
 
-> 火山引擎《Vibe Creating 实践手册》的中文整理版。署名见 [NOTICE](../NOTICE)。
+> 火山引擎《Vibe Creating 实践手册》的中文整理版([原文](https://bytedance.larkoffice.com/docx/FUHudm80VoGJRcxXykzcpNrQnj3))。署名见 [NOTICE](../NOTICE)。
 
 ## 模型越聪明，创作越简单
 
