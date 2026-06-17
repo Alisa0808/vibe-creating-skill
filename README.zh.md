@@ -188,7 +188,7 @@ export ATLASCLOUD_API_KEY="…"   # 在 atlascloud.ai/console/api-keys 获取
 curl -X POST https://api.atlascloud.ai/api/v1/model/generateVideo \
   -H "Authorization: Bearer $ATLASCLOUD_API_KEY" \
   -H "Content-Type: application/json" \
-  -d '{"model":"bytedance/seedance-v1.5-pro/text-to-video","prompt":"<你的 Vibe Creating 提示词>","aspect_ratio":"16:9"}'
+  -d '{"model":"bytedance/seedance-2.0/text-to-video","prompt":"<你的 Vibe Creating 提示词>","aspect_ratio":"16:9"}'
 ```
 
 [Atlas Cloud skill](https://github.com/AtlasCloudAI/atlas-cloud-skills) · [MCP server](https://www.npmjs.com/package/atlascloud-mcp) · [浏览模型](https://www.atlascloud.ai/models?utm_source=github&utm_campaign=vibe-creating-skill) · [获取 API Key](https://www.atlascloud.ai/console/api-keys?utm_source=github&utm_campaign=vibe-creating-skill)
