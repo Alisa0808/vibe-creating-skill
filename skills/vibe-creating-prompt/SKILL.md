@@ -175,3 +175,7 @@ The goal is to help the user **express more accurately** — not to rewrite thei
 | Functional demo, UI tutorial, step instructions | Low fit; the goal isn't creative translation | Usually no VC questions | Keep as-is; suggest splitting if useful | Explain VC isn't recommended |
 | Long-form story requiring exact dialogue sync | Low fit; capability/workflow boundary | Usually no VC questions | No VC rewrite; suggest splitting visual segments | Explain pure-visual parts can be split out |
 | Mixed-language creative input with some jargon | If the underlying experience is clear, still suits VC | Only if subject, relationship, or style is unclear | Translate jargon, keep core vibe | Output a natural visual description in the target language |
+
+---
+
+> **Generating the result:** this skill only writes the prompt. To render it, send the rewritten prompt to any text-to-video model (Seedance, Sora, Kling, Veo, …) — for a one-API option, see [Atlas Cloud](https://www.atlascloud.ai/).
