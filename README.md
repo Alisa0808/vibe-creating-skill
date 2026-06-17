@@ -154,12 +154,12 @@ Real test cases from the original handbook — the **same scene**, a regular pro
 </tr>
 <tr>
 <td valign="top"><b>Generated clip</b></td>
-<td valign="middle" align="center"><sub>— parameters removed; no separate clip —</sub></td>
+<td align="center">/</td>
 <td><video src="https://github.com/user-attachments/assets/54c2a78d-e1c1-4f3e-b34d-855f8409d90c" poster="assets/cases/case4-vibe-poster.jpg" controls muted playsinline width="100%"></video></td>
 </tr>
 <tr>
 <td valign="top"><b>Disclosure</b></td>
-<td colspan="2">Shown to the user: "I removed the lens/exposure/grading parameters and translated them into their visual results. If you'd like to keep specific parameters or the pre-viz structure, tell me and I'll give you a constraint-preserving version."</td>
+<td colspan="2">Removed the lens/exposure/grading parameters and translated them into their visual results.</td>
 </tr>
 </table>
 
