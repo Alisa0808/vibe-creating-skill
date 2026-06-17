@@ -4,7 +4,7 @@ Eight cases that exercise the skill's decision framework. They double as **eval 
 
 The framework crosses three axes — **Scenario (S)** × **Expression (E)** × **Information (I)** — so there are 3 × 3 × 2 = 18 base situations. These cases cover the important corners.
 
-> English is translated from the original draft; the complete Chinese original is kept in each `<details>原文</details>` block. Every case quotes its **full input and output** (transcribed from the source, including the cases the handbook showed as interaction screenshots). The one exception is Case 6, whose response in the source is a screenshot of a clarifying question rather than a final rewrite, so it lists the input and the action taken.
+> These cases come from ByteDance / Volcengine's [Prompt Skill draft (original, in Chinese)](https://bytedance.larkoffice.com/docx/AVJddCKUmoj6j7x08jbcRBzon8b). English is translated from the original draft; the complete Chinese original is kept in each `<details>原文</details>` block. Every case quotes its **full input and output** (transcribed from the source, including the cases the handbook showed as interaction screenshots). The one exception is Case 6, whose response in the source is a screenshot of a clarifying question rather than a final rewrite, so it lists the input and the action taken.
 
 ---
 

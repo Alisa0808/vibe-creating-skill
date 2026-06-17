@@ -16,7 +16,7 @@
 
 </div>
 
-**Vibe Creating** is an open-source, bilingual **prompt-engineering skill** that rewrites a rough idea, story, feeling, or over-specified shot script into a clean, **model-friendly text-to-video prompt** — and first judges whether your input even suits this style. It follows the open [Agent Skills standard](https://agentskills.io) (a single `SKILL.md`), so it runs in **Claude Code, Codex, OpenClaw, Hermes, Cursor**, and any compatible agent — or as a system prompt in any LLM. It works with AI video models like **Seedance 2.0, Sora, Kling, Veo, Runway, Pika, and Hailuo**.
+**Vibe Creating** is an open-source, bilingual **prompt-engineering skill** that rewrites a rough idea, story, feeling, or over-specified shot script into a clean, **model-friendly text-to-video prompt** — and first judges whether your input even suits this style. It follows the open [Agent Skills standard](https://agentskills.io) (a single `SKILL.md`), so it runs in **Claude Code, Codex, OpenClaw, Hermes, Cursor**, and any compatible agent — or as a system prompt in any LLM. It works with AI video models like **Seedance 2.0, Sora, Kling, Veo, Runway, Pika, and Hailuo** — all reachable through one API on [Atlas Cloud](https://www.atlascloud.ai/?utm_source=github&utm_campaign=vibe-creating-skill).
 
 ---
 
@@ -165,6 +165,36 @@ Real test cases from the original handbook — the **same scene**, a regular pro
 
 <sub>▶ Press play to watch, with sound.</sub>
 
+## 🚀 Generate it
+
+Vibe Creating writes the prompt — to turn it into an actual clip, send the rewritten prompt to any text-to-video model. The quickest path is [Atlas Cloud](https://www.atlascloud.ai/?utm_source=github&utm_campaign=vibe-creating-skill), one unified API for **Seedance, Sora, Kling, Veo**, and more.
+
+**Let your agent do it end-to-end** — add the official skill or MCP, then ask it to rewrite *and* generate:
+
+```bash
+# Skill
+npx skills add AtlasCloudAI/atlas-cloud-skills
+# …or MCP (Claude Code / Codex / Cursor / …)
+claude mcp add atlascloud -- npx -y atlascloud-mcp
+
+export ATLASCLOUD_API_KEY="…"   # get one at atlascloud.ai/console/api-keys
+```
+
+> *"Rewrite this with Vibe Creating, then generate it with Seedance."*
+
+**Or call the API directly:**
+
+```bash
+curl -X POST https://api.atlascloud.ai/api/v1/model/generateVideo \
+  -H "Authorization: Bearer $ATLASCLOUD_API_KEY" \
+  -H "Content-Type: application/json" \
+  -d '{"model":"bytedance/seedance-2.0/text-to-video","prompt":"<your Vibe Creating prompt>","aspect_ratio":"16:9"}'
+```
+
+[Atlas Cloud skill](https://github.com/AtlasCloudAI/atlas-cloud-skills) · [MCP server](https://github.com/AtlasCloudAI/mcp-server) · [browse models](https://www.atlascloud.ai/models?utm_source=github&utm_campaign=vibe-creating-skill) · [get an API key](https://www.atlascloud.ai/console/api-keys?utm_source=github&utm_campaign=vibe-creating-skill)
+
+<sub>Disclosure: this repo is maintained by folks at Atlas Cloud. The skill itself is model- and provider-agnostic — any text-to-video API works.</sub>
+
 ## 🚫 When NOT to use it
 
 Vibe Creating is for atmosphere, emotion, narrative, and visual exploration. For **precise word-for-word dialogue sync, strict shot-by-shot execution, UI demos, or step-by-step tutorials**, traditional precise prompting is the better tool — and the skill will tell you so rather than force a rewrite.
@@ -213,6 +243,6 @@ Translations, new gallery prompts, and refinements welcome — see the [contribu
 
 ## 📄 Attribution & license
 
-The **Vibe Creating** paradigm, the original skill draft, and the example prompts originate from **ByteDance / Volcengine** (created with **Seedance 2.0**). This repository is an independent, faithful English/bilingual port of that publicly-shared methodology, not an official product. See the [NOTICE](NOTICE) file for full attribution.
+The **Vibe Creating** paradigm, the original skill draft, and the example prompts originate from **ByteDance / Volcengine** (created with **Seedance 2.0**). This repository is an independent, faithful English/bilingual port of that publicly-shared methodology, not an official product. Original sources (in Chinese): [Practice Handbook](https://bytedance.larkoffice.com/docx/FUHudm80VoGJRcxXykzcpNrQnj3) · [Prompt Skill draft](https://bytedance.larkoffice.com/docx/AVJddCKUmoj6j7x08jbcRBzon8b). See the [NOTICE](NOTICE) file for full attribution.
 
 Code and documentation in this repo are released under the [MIT License](LICENSE). The underlying paradigm and any trademarks remain with their original owners.

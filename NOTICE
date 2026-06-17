@@ -15,6 +15,10 @@ docs/examples/ all originate from:
 and were published in their "Vibe Creating Practice Handbook," produced with the
 Seedance 2.0 video-generation model.
 
+ORIGINAL SOURCES (ByteDance / Volcengine, in Chinese):
+- Practice Handbook: https://bytedance.larkoffice.com/docx/FUHudm80VoGJRcxXykzcpNrQnj3
+- Prompt Skill draft: https://bytedance.larkoffice.com/docx/AVJddCKUmoj6j7x08jbcRBzon8b
+
 This repository is NOT an official ByteDance / Volcengine product, is not
 affiliated with or endorsed by them, and does not represent them. It exists to
 make a publicly-shared methodology easier to adopt in English and across tools.
