@@ -16,7 +16,7 @@
 
 </div>
 
-**Vibe Creating** is an open-source, bilingual **prompt-engineering skill** that rewrites a rough idea, story, feeling, or over-specified shot script into a clean, **model-friendly text-to-video prompt** — and first judges whether your input even suits this style. It follows the open [Agent Skills standard](https://agentskills.io) (a single `SKILL.md`), so it runs in **Claude Code, Codex, OpenClaw, Hermes, Cursor**, and any compatible agent — or as a system prompt in any LLM. It works with any text-to-video model — **Seedance 2.0, Sora, Kling, Veo, Runway, Pika, Hailuo**, and more — several of which (**Seedance, Kling, Veo, Hailuo**, …) are reachable through one API on [Atlas Cloud](https://www.atlascloud.ai/?utm_source=github&utm_campaign=vibe-creating-skill).
+**Vibe Creating** is an open-source, bilingual **prompt-engineering skill** that rewrites a rough idea, story, feeling, or over-specified shot script into a clean, **model-friendly text-to-video prompt** — and first judges whether your input even suits this style. It follows the open [Agent Skills standard](https://agentskills.io) (a single `SKILL.md`), so it runs in **Claude Code, Codex, OpenClaw, Hermes**, and any agent on the same standard — or as a rule (Cursor) or system prompt (GPT, Gemini, any LLM). It works with any text-to-video model — **Seedance 2.0, Sora, Kling, Veo, Runway, Pika, Hailuo**, and more — several of which (**Seedance, Kling, Veo, Hailuo**, …) are reachable through one API on [Atlas Cloud](https://www.atlascloud.ai/?utm_source=github&utm_campaign=vibe-creating-skill).
 
 ---
 
@@ -91,7 +91,7 @@ cp -r vibe-creating-skill/skills/vibe-creating-prompt <your-agent-skills-dir>/
 | OpenClaw | `~/.openclaw/skills/` |
 | Hermes | `~/.hermes/skills/` |
 
-**Option 3 — Any other LLM.** Paste the body of [the skill file](skills/vibe-creating-prompt/SKILL.md) (or [its Chinese edition](skills/vibe-creating-prompt/SKILL.zh.md)) as the system prompt / custom instructions in GPT, Gemini, a local model, etc.
+**Option 3 — Cursor or any other LLM.** Paste the body of [the skill file](skills/vibe-creating-prompt/SKILL.md) (or [its Chinese edition](skills/vibe-creating-prompt/SKILL.zh.md)) as a rule (Cursor) or as the system prompt / custom instructions (GPT, Gemini, a local model, etc.).
 
 Then restart your agent and describe what you want to film — e.g. *"a basketball kid hits a buzzer-beater three."*
 
@@ -222,7 +222,7 @@ Any text-to-video model — it was distilled from **Seedance 2.0**, and the same
 <details>
 <summary><b>Which agents does this work with?</b></summary>
 
-Any agent that supports the open Agent Skills (`SKILL.md`) standard — **Claude Code, Codex, OpenClaw, Hermes, Cursor**, and others — or any LLM at all, by pasting the skill as a system prompt.
+Any agent that supports the open Agent Skills (`SKILL.md`) standard — **Claude Code, Codex, OpenClaw, Hermes**, and others. For tools that use their own rules format (e.g. **Cursor**) or any plain LLM, paste the skill as a rule / system prompt.
 </details>
 
 <details>
