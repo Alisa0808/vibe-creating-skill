@@ -110,8 +110,8 @@ Real test cases from the original handbook — the **same scene**, a regular pro
 </tr>
 <tr>
 <td valign="top"><b>Generated clip</b></td>
-<td><a href="assets/cases/case2-regular.mp4"><img src="assets/cases/case2-regular-poster.jpg" width="100%"></a></td>
-<td><a href="assets/cases/case2-vibe.mp4"><img src="assets/cases/case2-vibe-poster.jpg" width="100%"></a></td>
+<td><video src="https://github.com/user-attachments/assets/f8757543-faa4-41a1-bea4-39b736578ce9" poster="assets/cases/case2-regular-poster.jpg" controls muted playsinline width="100%"></video></td>
+<td><video src="https://github.com/user-attachments/assets/be474eae-f3d5-462b-abf6-4c47d59f952b" poster="assets/cases/case2-vibe-poster.jpg" controls muted playsinline width="100%"></video></td>
 </tr>
 <tr>
 <td valign="top"><b>Comparison</b></td>
@@ -119,7 +119,7 @@ Real test cases from the original handbook — the **same scene**, a regular pro
 </tr>
 </table>
 
-<sub>▶ Click a clip to open the full video, with sound.</sub>
+<sub>▶ Press play to watch, with sound.</sub>
 
 ### Case 3 · execution shot-script → direct rewrite
 
@@ -132,8 +132,8 @@ Real test cases from the original handbook — the **same scene**, a regular pro
 </tr>
 <tr>
 <td valign="top"><b>Generated clip</b></td>
-<td><a href="assets/cases/case3-regular.mp4"><img src="assets/cases/case3-regular-poster.jpg" width="100%"></a></td>
-<td><a href="assets/cases/case3-vibe.mp4"><img src="assets/cases/case3-vibe-poster.jpg" width="100%"></a></td>
+<td><video src="https://github.com/user-attachments/assets/65e1c50a-e0cf-4282-8372-0eb40a7ee229" poster="assets/cases/case3-regular-poster.jpg" controls muted playsinline width="100%"></video></td>
+<td><video src="https://github.com/user-attachments/assets/eb17664b-71b4-49b5-868f-249833cee915" poster="assets/cases/case3-vibe-poster.jpg" controls muted playsinline width="100%"></video></td>
 </tr>
 <tr>
 <td valign="top"><b>Comparison</b></td>
@@ -141,7 +141,7 @@ Real test cases from the original handbook — the **same scene**, a regular pro
 </tr>
 </table>
 
-<sub>▶ Click a clip to open the full video, with sound.</sub>
+<sub>▶ Press play to watch, with sound.</sub>
 
 ### Case 4 · heavy precision control → rewrite, with disclosure
 
@@ -155,7 +155,7 @@ Real test cases from the original handbook — the **same scene**, a regular pro
 <tr>
 <td valign="top"><b>Generated clip</b></td>
 <td valign="middle" align="center"><sub>— parameters removed; no separate clip —</sub></td>
-<td><a href="assets/cases/case4-vibe.mp4"><img src="assets/cases/case4-vibe-poster.jpg" width="100%"></a></td>
+<td><video src="https://github.com/user-attachments/assets/54c2a78d-e1c1-4f3e-b34d-855f8409d90c" poster="assets/cases/case4-vibe-poster.jpg" controls muted playsinline width="100%"></video></td>
 </tr>
 <tr>
 <td valign="top"><b>Disclosure</b></td>
@@ -163,9 +163,7 @@ Real test cases from the original handbook — the **same scene**, a regular pro
 </tr>
 </table>
 
-<sub>▶ Click the clip to open the full video, with sound.</sub>
-
-**Disclosure (shown to the user) —** "I removed the lens/exposure/grading parameters and translated them into their visual results. If you'd like to keep specific parameters or the pre-viz structure, tell me and I'll give you a constraint-preserving version."
+<sub>▶ Press play to watch, with sound.</sub>
 
 ## 🚫 When NOT to use it
 
